@@ -1,0 +1,6 @@
+- Python install manager 26.3
+- Cloning the code from GitHub remore --> git clone https://github.com/pragatidev/AIAgentsBootcamp.git
+- Setup the virtual environment wuthing your working folder --> python -m venv .venv 
+- Activate python virtual environment --> .\.venv\Scripts\Activate.ps1
+- Installed Ollama
+- ollama pull qwen3:8b

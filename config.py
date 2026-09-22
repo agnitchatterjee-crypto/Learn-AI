@@ -1,0 +1,132 @@
+"""The only place a model id lives.
+
+Verify ids at record time. See docs/CURRENCY.md.
+Never put a model name in a lecture title.
+A missing key is not an error. Pytest stays green.
+"""
+
+from __future__ import annotations
+
+import os
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+
+
+def _load_dotenv() -> None:
+    """Load .env from the repo root. Never print values. Do not overwrite."""
+    env_path = ROOT / ".env"
+    if not env_path.is_file():
+        return
+    for raw in env_path.read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+_load_dotenv()
+
+# Local default. Free. No key. Verify the tag at record time.
+# qwen3:8b is the student chat model: tool calling works on a 16 GB laptop.
+OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
+CHAT_MODEL = os.environ.get("OLLAMA_CHAT_MODEL", "qwen3:8b")
+# Cap on tokens one local reply may generate. Ollama serves one request at a
+# time, and a thinking model that loops can hold that slot for twenty minutes.
+# 4096 covers every lab reply in this course with room for the thinking block.
+NUM_PREDICT = int(os.environ.get("OLLAMA_NUM_PREDICT", "4096"))
+NO_TOOLS_MODEL = os.environ.get("OLLAMA_NO_TOOLS_MODEL", "llama3.2:3b")
+
+# Cloud ids stay empty until a live key is set. Verify at record time. Do not guess.
+OPENAI_CHAT_MODEL = os.environ.get("OPENAI_CHAT_MODEL", "")
+ANTHROPIC_CHAT_MODEL = os.environ.get("ANTHROPIC_CHAT_MODEL", "")
+
+# Embeddings. Local default is nomic-embed-text (768 dimensions on Ollama).
+# faiss_index measures the width at build time; do not copy 768 elsewhere.
+EMBED_MODEL = os.environ.get("OLLAMA_EMBED_MODEL", "nomic-embed-text")
+OPENAI_EMBED_MODEL = os.environ.get("OPENAI_EMBED_MODEL", "")
+EMBED_DIMENSIONS = 768
+EMBED_DIMS = EMBED_DIMENSIONS  # older name kept for Part 4 labs
+
+
+def has_live_key() -> bool:
+    """True only when a cloud key is present. Local Ollama does not count as a key."""
+    openai_key = os.environ.get("OPENAI_API_KEY", "").strip()
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    return bool(openai_key or anthropic_key)
+
+
+def _ollama_base() -> str:
+    url = OLLAMA_BASE_URL.rstrip("/")
+    if url.endswith("/v1"):
+        url = url[:-3]
+    return url
+
+
+def get_local_chat_model(**kwargs):
+    """ChatOllama on the student default. Ignores hosted keys."""
+    from langchain_ollama import ChatOllama
+
+    params = {
+        "model": kwargs.pop("model", CHAT_MODEL),
+        "base_url": kwargs.pop("base_url", _ollama_base()),
+        "temperature": kwargs.pop("temperature", 0),
+        "num_predict": kwargs.pop("num_predict", NUM_PREDICT),
+    }
+    params.update(kwargs)
+    return ChatOllama(**params)
+
+
+def get_chat_model(**kwargs):
+    """Return a LangChain chat model for the configured provider.
+
+    Hosted OpenAI or Anthropic when a key and a model id are set.
+    Otherwise ChatOllama on the student default.
+    """
+    openai_key = os.environ.get("OPENAI_API_KEY", "").strip()
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    if openai_key and OPENAI_CHAT_MODEL and not kwargs.get("force_local"):
+        from langchain_openai import ChatOpenAI
+
+        return ChatOpenAI(model=OPENAI_CHAT_MODEL, temperature=0)
+    if anthropic_key and ANTHROPIC_CHAT_MODEL and not kwargs.get("force_local"):
+        from langchain_anthropic import ChatAnthropic
+
+        return ChatAnthropic(model=ANTHROPIC_CHAT_MODEL, temperature=0)
+    kwargs.pop("force_local", None)
+    return get_local_chat_model(**kwargs)
+
+
+def tracing_callbacks():
+    """Local jsonl tracer, always on. LangChainTracer too when a key is set."""
+    from dataflow.ops.tracer import LocalTraceHandler
+    from dataflow.tracing import langsmith_tracer_if_key
+
+    handlers: list = [LocalTraceHandler()]
+    hosted = langsmith_tracer_if_key()
+    if hosted is not None:
+        handlers.append(hosted)
+    return handlers
+
+
+def get_embeddings():
+    """Return the desk embedder. Same model must build the index and query it.
+
+    Hosted OpenAI when a key and OPENAI_EMBED_MODEL are set.
+    Otherwise OllamaEmbeddings on nomic-embed-text.
+    """
+    openai_key = os.environ.get("OPENAI_API_KEY", "").strip()
+    openai_embed = os.environ.get("OPENAI_EMBED_MODEL", OPENAI_EMBED_MODEL).strip()
+    if openai_key and openai_embed:
+        from langchain_openai import OpenAIEmbeddings
+
+        return OpenAIEmbeddings(model=openai_embed)
+    from langchain_ollama import OllamaEmbeddings
+
+    model = os.environ.get("OLLAMA_EMBED_MODEL", EMBED_MODEL)
+    return OllamaEmbeddings(model=model, base_url=_ollama_base())
+
