@@ -47,6 +47,9 @@ def load_stuffed() -> str:
 
 STUFFED = load_stuffed()
 tiktoken_short = len(enc.encode(SHORT))
+ids = enc.encode(SHORT)
+for i in ids:
+    print(i, '->', repr(enc.decode([i])))
 tiktoken_stuffed = len(enc.encode(STUFFED))
 print("tiktoken_short", tiktoken_short)
 print("tiktoken_stuffed", tiktoken_stuffed)
