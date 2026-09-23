@@ -23,6 +23,7 @@ raw = client.chat.completions.create(
     extra_body={"think": False},
 )
 msg = raw.choices[0].message
+print(raw.choices)
 print("Ollama base URL", base)
 print("raw_model", raw.model)
 print("raw_text", msg.content)
