@@ -17,7 +17,8 @@ if not base.endswith("/v1"):
 client = OpenAI(base_url=base, api_key="ollama")
 raw = client.chat.completions.create(
     model=config.CHAT_MODEL,
-    messages=[{"role": "user", "content": PROMPT}],
+    messages=[{"role": "system", "content": "Consider yourself a senior AI engineer with expertise in LLMs."},
+              {"role": "user", "content": PROMPT}],
     temperature=0,
     max_tokens=256,
     extra_body={"think": False},
