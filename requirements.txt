@@ -21,7 +21,6 @@ pydantic>=2.0
 langgraph-cli[inmem]>=0.4
 langsmith>=0.4
 deepagents>=0.7
-
 openai>=1.0
 ollama>=0.4
 fastapi>=0.115
@@ -31,3 +30,7 @@ playwright>=1.40
 streamlit>=1.40
 mcp>=2.2
 fastmcp>=4.0
+beautifulsoup4==4.12.3
+python-dotenv==1.0.1
+requests==2.32.3
+openai==1.59.6
