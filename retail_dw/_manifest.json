@@ -1,0 +1,34 @@
+{
+  "args": {
+    "scale": "small",
+    "customers": 2000,
+    "products": 300,
+    "stores": 12,
+    "suppliers": 25,
+    "orders": 25000,
+    "inventory_weeks": 26,
+    "inventory_sku_share": 0.4,
+    "guest_rate": 0.12,
+    "scd_rate": 0.15,
+    "review_rate": 0.04,
+    "extra_promos_per_year": 6,
+    "start_date": "2023-01-01",
+    "end_date": "2026-09-30",
+    "seed": 42,
+    "out": "retail_dw",
+    "formats": "csv,sqlite"
+  },
+  "row_counts": {
+    "dim_date": 1489,
+    "dim_supplier": 25,
+    "dim_product": 300,
+    "dim_customer": 2260,
+    "dim_store": 14,
+    "dim_promotion": 54,
+    "fact_sales": 58293,
+    "fact_returns": 3585,
+    "fact_product_reviews": 1919,
+    "fact_inventory_snapshot": 37440,
+    "fact_purchase_orders": 344
+  }
+}

@@ -1,0 +1,26 @@
+supplier_key,supplier_name,country,lead_time_days,payment_terms,quality_rating,contract_start_date
+1,Kestrel Textiles 001,India,30,Net 60,3.5,2022-02-20
+2,Lumina Textiles 002,Germany,30,Net 30,4.2,2022-09-28
+3,Apex Textiles 003,India,7,Net 30,4.1,2018-11-27
+4,Kestrel Industries 004,Bangladesh,14,Net 45,3.9,2021-05-12
+5,Apex Trading 005,Germany,14,Net 60,3.6,2021-09-18
+6,Fortis Textiles 006,India,14,Net 30,3.7,2020-12-28
+7,Jadeline Manufacturing 007,India,30,Advance,4.1,2020-10-18
+8,Bluewave Exports 008,China,30,Net 60,4.2,2018-12-21
+9,Bluewave Textiles 009,Germany,7,Net 60,5.0,2021-08-13
+10,Bluewave Distribution 010,China,14,Net 60,3.3,2020-12-05
+11,Dunmore Industries 011,China,30,Net 30,4.2,2021-12-17
+12,Ironbridge Industries 012,India,7,Advance,3.8,2019-05-02
+13,Lumina Exports 013,India,30,Net 60,4.7,2022-08-10
+14,Dunmore Textiles 014,China,14,Net 60,3.1,2019-09-28
+15,Lumina Manufacturing 015,India,30,Advance,3.8,2019-04-26
+16,Harbor Trading 016,China,7,Net 45,4.5,2019-11-25
+17,Evergreen Industries 017,Bangladesh,14,Advance,3.7,2022-02-22
+18,Ironbridge Distribution 018,India,5,Net 30,3.3,2022-01-09
+19,Kestrel Distribution 019,Bangladesh,5,Advance,3.8,2020-04-18
+20,Ironbridge Manufacturing 020,Bangladesh,5,Net 30,4.4,2019-11-29
+21,Evergreen Industries 021,China,5,Net 60,3.9,2020-05-17
+22,Apex Industries 022,Germany,10,Net 45,4.0,2022-04-29
+23,Kestrel Manufacturing 023,Germany,21,Net 45,3.3,2022-01-06
+24,Ironbridge Exports 024,India,21,Net 60,4.0,2022-04-17
+25,Fortis Manufacturing 025,India,5,Net 45,4.8,2022-06-24

@@ -2,7 +2,7 @@ from docx import Document
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
-
+import json
 
 def extract_text(path):
     doc = Document(path)
@@ -32,26 +32,82 @@ else:
     print("API key found and looks good so far!")
 
 
-openai = OpenAI()
+# openai = OpenAI()
 
-user_content = "I want you to \
+# user_content = "I want you to \
+#     1) Look at my profile and generate a one year plan for me in details so as to either 2x my salary or get a better job in the next 12 months. \
+#     2) Please consider my current skills, experience, and the latest trends in the industry. \
+#     3) Provide a month-by-month breakdown of actionable steps, including learning resources, networking strategies, and any certifications that would be beneficial. \
+#     4) Also, suggest ways to measure progress and adjust the plan as needed. My CV is as follows (in text format) \n" + text + " \
+#     5) Provide the output in a clear and business-like format, suitable for presentation to a mentor or career coach in .md format. The .md file should be without code blocks.\
+#     6) Help with deatiled links to study guides to udemy/youtube or other stydy resources and clarly articulate whihc course is best for which skill. \
+#     7) If within the markdowns, you are having wide tables, switch the bullet lines instead of tables. \
+#     8) Please provide a list of relevant links to study guides, courses, and resources"
+
+# messages = [
+#     {"role": "system", "content": "You are a professional CV reviewer and career guide, expert at helping data engineers and solutions architect to grow their careers. You are an expert in career planning, skill development, and industry trends."},
+#     {"role": "user", "content": user_content}
+#     ]
+
+# response = openai.chat.completions.create(
+#     model="gpt-4.1-mini", 
+#     messages=messages,
+#     response_format={"type": "text"}
+#     )
+
+#print(response.choices[0].message.content)
+
+
+def professional_builder(cv_link):
+
+    openai = OpenAI()
+
+    text = extract_text(cv_link)
+
+    user_content = "I want you to \
     1) Look at my profile and generate a one year plan for me in details so as to either 2x my salary or get a better job in the next 12 months. \
     2) Please consider my current skills, experience, and the latest trends in the industry. \
     3) Provide a month-by-month breakdown of actionable steps, including learning resources, networking strategies, and any certifications that would be beneficial. \
     4) Also, suggest ways to measure progress and adjust the plan as needed. My CV is as follows (in text format) \n" + text + " \
-    5) Provide the output in a clear and business-like format, suitable for presentation to a mentor or career coach in .md format. \
-    6) Help with deatiled links to study guides to udemy/youtube or other stydy resources and clarly articulate whihc course is best for which skill. "
+    5) Provide the output in a clear and business-like format, suitable for presentation to a mentor or career coach in .md format. The .md file should be without code blocks.\
+    6) Help with deatiled links to study guides to udemy/youtube or other stydy resources and clarly articulate whihc course is best for which skill. \
+    7) If within the markdowns, you are having wide tables, switch the bullet lines instead of tables. \
+    8) Please provide a list of relevant links to study guides, courses, and resources"
 
-messages = [
-    {"role": "system", "content": "You are a professional at helping data engineers and solutions architect to grow their careers. You are an expert in career planning, skill development, and industry trends."},
+    messages = [
+    {"role": "system", "content": "You are a professional CV reviewer and career guide, expert at helping data engineers and solutions architect to grow their careers. You are an expert in career planning, skill development, and industry trends."},
     {"role": "user", "content": user_content}
     ]
 
-response = openai.chat.completions.create(model="gpt-4.1-mini", messages=messages)
+    response = openai.chat.completions.create(
+        model="gpt-4.1-mini", 
+        messages=messages,
+        response_format={"type": "text"},
+    )
 
-#print(response.choices[0].message.content)
+    response_text = response.choices[0].message.content
+    return response_text
+
+
+career_plan= professional_builder("Agnit_Chatterjee_Resume_2026.docx")
 
 with open("output.md", "w", encoding="utf-8") as file:
-    file.write(response.choices[0].message.content)
+    file.write(career_plan)
 
 print("Markdown file created successfully!")
+
+
+# def select_relevant_links(url):
+#     response = openai.chat.completions.create(
+#         model=MODEL,
+#         messages=[
+#             {"role": "system", "content": link_system_prompt},
+#             {"role": "user", "content": get_links_user_prompt(url)}
+#         ],
+#         response_format={"type": "json_object"}
+#     )
+#     result = response.choices[0].message.content
+#     links = json.loads(result)
+#     return links
+    
+

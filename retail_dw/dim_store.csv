@@ -1,0 +1,15 @@
+store_key,store_id,store_name,store_type,channel,city,state,country,region,open_date,square_feet,manager_name
+1,WEB,Online - Web,Online,Online,Bengaluru,Karnataka,India,South,2023-01-01,,
+2,APP,Online - App,Online,Online,Bengaluru,Karnataka,India,South,2023-01-01,,
+3,ST0003,Pune High Street 03,High Street,Store,Pune,Maharashtra,India,West,2019-07-02,6374,Hannah Banerjee
+4,ST0004,Chennai Flagship 04,Flagship,Store,Chennai,Tamil Nadu,India,South,2017-04-03,29859,Zara Smith
+5,ST0005,Delhi Mall 05,Mall,Store,Delhi,Delhi,India,North,2019-09-13,13269,Ishita Nair
+6,ST0006,New York High Street 06,High Street,Store,New York,New York,United States,Americas,2016-09-06,6977,Rahul Banerjee
+7,ST0007,Hyderabad High Street 07,High Street,Store,Hyderabad,Telangana,India,South,2019-09-24,6688,Sofia Wong
+8,ST0008,Delhi Flagship 08,Flagship,Store,Delhi,Delhi,India,North,2022-02-21,30070,Layla Silva
+9,ST0009,Mumbai Mall 09,Mall,Store,Mumbai,Maharashtra,India,West,2020-02-14,13513,Aarav Wong
+10,ST0010,Mumbai High Street 10,High Street,Store,Mumbai,Maharashtra,India,West,2015-08-12,4619,James Mehta
+11,ST0011,Delhi High Street 11,High Street,Store,Delhi,Delhi,India,North,2020-12-22,5986,Sofia Johnson
+12,ST0012,Delhi Flagship 12,Flagship,Store,Delhi,Delhi,India,North,2016-04-28,28594,Noah Khan
+13,ST0013,Chennai Outlet 13,Outlet,Store,Chennai,Tamil Nadu,India,South,2018-09-15,10155,Meera Walker
+14,ST0014,Pune Mall 14,Mall,Store,Pune,Maharashtra,India,West,2019-02-18,13007,Priya Clarke

@@ -1,0 +1,421 @@
+8 sections • 210 lectures • 33h 21m total length
+Day 1 - Running Your First LLM Locally with Ollama and Open Source Models
+10:41
+Day 1 - Spanish Tutor Demo with Open-Source Models & Course Overview
+8:54
+Your Path to Becoming a Proficient AI Engineer
+3:42
+Day 1 - Setting Up Your LLM Development Environment with Cursor and UV
+5:52
+Day 1 - Setting Up Your PC Development Environment with Git and Cursor
+9:50
+Day 1 - Mac Setup: Installing Git, Cloning the Repo, and Cursor IDE
+9:47
+Day 1 - Installing UV and Setting Up Your Cursor Development Environment
+7:50
+Day 1 - Setting Up Your OpenAI API Key and Environment Variables
+12:28
+Day 1 - Installing Cursor Extensions and Setting Up Your Jupyter Notebook
+8:40
+Day 1 - Running Your First OpenAI API Call and System vs User Prompts
+11:41
+Day 1 - Building a Website Summarizer with OpenAI Chat Completions API
+10:14
+Day 1 - Hands-On Exercise: Building Your First OpenAI API Call from Scratch
+5:34
+Day 2 - LLM Engineering Building Blocks: Models, Tools & Techniques
+8:10
+Day 2 - Your 8-Week Journey: From Chat Completions API to LLM Engineer
+2:51
+Day 2 - Frontier Models: OpenAI GPT, Claude, Gemini & Grok Compared
+6:14
+Day 2 - Open-Source LLMs: LLaMA, Mistral, DeepSeek, and Ollama
+12:03
+Day 2 - Chat Completions API: HTTP Endpoints vs OpenAI Python Client
+10:11
+Day 2 - Using the OpenAI Python Client with Multiple LLM Providers
+7:41
+Day 2 - Running Ollama Locally with OpenAI-Compatible Endpoints
+10:28
+Day 3 - Base, Chat, and Reasoning Models: Understanding LLM Types
+10:44
+Day 3 - Frontier Models: GPT, Claude, Gemini & Their Strengths and Pitfalls
+12:56
+Day 3 - Testing ChatGPT-5 and Frontier LLMs Through the Web UI
+9:43
+Day 3 - Testing Claude, Gemini, Grok & DeepSeek with ChatGPT Deep Research
+11:33
+Day 3 - Agentic AI in Action: Deep Research, Claude Code, and Agent Mode
+11:22
+Day 3 - Frontier Models Showdown: Building an LLM Competition Game
+10:14
+Day 4 - Understanding Transformers: The Architecture Behind GPT and LLMs
+12:46
+Day 4 - From LSTMs to Transformers: Attention, Emergent Intelligence & Agentic A
+9:08
+Day 4 - Parameters: From Millions to Trillions in GPT, LLaMA & DeepSeek
+8:05
+Day 4 - What Are Tokens? From Characters to GPT's Tokenizer
+4:02
+Day 4 - Understanding Tokenization: How GPT Breaks Down Text into Tokens
+8:13
+Day 4 - Tokenizing with tiktoken and Understanding the Illusion of Memory
+10:56
+Day 4 - Context Windows, API Costs, and Token Limits in LLMs
+10:49
+Day 5 - Building a Sales Brochure Generator with OpenAI Chat Completions API
+9:03
+Day 5 - Building JSON Prompts and Using OpenAI's Chat Completions API
+10:43
+Day 5 - Chaining GPT Calls: Building an AI Company Brochure Generator
+9:07
+Day 5 - Building a Brochure Generator with GPT-4 and Streaming Results
+11:17
+Day 5 - Business Applications, Challenges & Building Your AI Tutor
+8:54
+Day 1 - Connecting to Multiple Frontier Models with APIs (OpenAI, Claude, Gemini
+11:58
+Day 1 - Testing GPT-5 Models with Reasoning Effort and Scaling Puzzles
+6:59
+Day 1 - Testing Claude, GPT-5, Gemini & DeepSeek on Brain Teasers
+7:59
+Day 1 - Local Models with Ollama, Native APIs, and OpenRouter Integration
+9:08
+Day 1 - LangChain vs LiteLLM: Choosing the Right LLM Framework
+12:11
+Day 1 - LLM vs LLM: Building Multi-Model Conversations with OpenAI & Claude
+10:44
+Day 2 - Building Data Science UIs with Gradio (No Front-End Skills Required)
+9:57
+Day 2 - Building Your First Gradio Interface with Callbacks and Sharing
+9:31
+Day 2 - Building Gradio Interfaces with Authentication and GPT Integration
+8:40
+Day 2 - Markdown Responses and Streaming with Gradio and OpenAI
+10:13
+Day 2 - Building Multi-Model Gradio UIs with GPT and Claude Streaming
+8:36
+Day 3 - Building Chat UIs with Gradio: Your First Conversational AI Assistant
+8:51
+Day 3 - Building a Streaming Chatbot with Gradio and OpenAI API
+6:02
+Day 3 - System Prompts, Multi-Shot Prompting, and Your First Look at RAG
+10:14
+Day 4 - How LLM Tool Calling Really Works (No Magic, Just Prompts)
+8:10
+Day 4 - Common Use Cases for LLM Tools and Agentic AI Workflows
+3:31
+Day 4 - Building an Airline AI Assistant with Tool Calling in OpenAI and Gradio
+11:40
+Day 4 - Handling Multiple Tool Calls with OpenAI and Gradio
+9:57
+Day 4 - Building Tool Calling with SQLite Database Integration
+12:43
+Day 5 - Introduction to Agentic AI and Building Multi-Tool Workflows
+8:29
+Day 5 - How Gradio Works: Building Web UIs from Python Code
+7:56
+Day 5 - Building Multi-Modal Apps with DALL-E 3, Text-to-Speech, and Gradio Bloc
+10:42
+Day 5 - Running Your Multimodal AI Assistant with Gradio and Tools
+8:06
+Day 5 Extra - Compare Frontier LLMs with OpenRouter: Generate SVG Art in Python
+8:37
+Day 1 - Introduction to Hugging Face Platform: Models, Datasets, and Spaces
+11:57
+Day 1 - HuggingFace Libraries: Transformers, Datasets, and Hub Explained
+6:34
+Day 1 - Introduction to Google Colab and Cloud GPUs for AI Development
+10:26
+Day 1 - Getting Started with Google Colab: Setup, Runtime, and Free GPU Access
+7:44
+Day 1 - Setting Up Google Colab with Hugging Face and Running Your First Model
+9:45
+Day 1 - Running Stable Diffusion and FLUX on Google Colab GPUs
+14:02
+Day 2 - Introduction to Hugging Face Pipelines for Quick AI Inference
+8:25
+Day 2 - HuggingFace Pipelines API for Sentiment Analysis on Colab T4 GPU
+11:25
+Day 2 - Named Entity Recognition, Q&A, and Hugging Face Pipeline Tasks
+10:12
+Day 2 - Hugging Face Pipelines: Image, Audio & Diffusion Models in Colab
+7:24
+Day 3 - Tokenizers: How LLMs Convert Text to Numbers
+9:12
+Day 3 - Tokenizers in Action: Encoding and Decoding with Llama 3.1
+11:01
+Day 3 - How Chat Templates Work: LLaMA Tokenizers and Special Tokens
+7:27
+Day 3 - Comparing Tokenizers: Phi-4, DeepSeek, and QWENCoder in Action
+5:26
+Day 4 - Deep Dive into Transformers, Quantization, and Neural Networks
+7:48
+Day 4 - Working with Hugging Face Transformers Low-Level API and Quantization
+10:11
+Day 4 - Inside LLaMA: PyTorch Model Architecture and Token Embeddings
+8:21
+Day 4 - Inside LLaMA: Decoder Layers, Attention, and Why Non-Linearity Matters
+11:27
+Day 4 - Running Open Source LLMs: Phi, Gemma, Qwen & DeepSeek with Hugging Face
+11:08
+Day 5 - Visualizing Token-by-Token Inference in GPT Models
+12:16
+Day 5 - Building Meeting Minutes from Audio with Whisper and Google Colab
+8:50
+Day 5 - Building Meeting Minutes with OpenAI Whisper and LLaMA 3.2
+9:32
+Day 5 - Week 3 Wrap-Up: Build a Synthetic Data Generator with Open Source Models
+4:08
+Day 1 - Choosing the Right LLM: Model Selection Strategy and Basics
+11:44
+Day 1 - The Chinchilla Scaling Law: Parameters, Training Data and Why It Matters
+4:02
+Day 1 - Understanding AI Model Benchmarks: GPQA, MMLU-Pro, and HLE
+8:08
+Day 1 - Limitations of AI Benchmarks: Data Contamination and Overfitting
+8:27
+Day 1 - Build a Connect Four Leaderboard (Reasoning Benchmark)
+8:37
+Day 2 - Navigating AI Leaderboards: Artificial Analysis, HuggingFace & More
+8:57
+Day 2 - Artificial Analysis Deep Dive: Model Intelligence vs Cost Comparison
+10:42
+Day 2 - Vellum, SEAL, and LiveBench: Essential AI Model Leaderboards
+9:09
+Day 2 - LM Arena: Blind Testing AI Models with Community Elo Ratings
+4:32
+Day 2 - Commercial Use Cases: Automation, Augmentation & Agentic AI
+8:48
+Day 3 - Selecting LLMs for Code Generation: Python to C++ with Cursor
+8:32
+Day 3 - Selecting Frontier Models: GPT-5, Claude, Grok & Gemini for C++ Code Gen
+8:48
+Day 3 - Porting Python to C++ with GPT-5: 230x Performance Speedup
+11:15
+Day 3 - AI Coding Showdown: GPT-5 vs Claude vs Gemini vs Groq Performance
+9:57
+Day 4 - Open Source Models for Code Generation: Qwen, DeepSeek & Ollama
+9:41
+Day 4 - Building a Gradio UI to Test Python-to-C++ Code Conversion Models
+6:29
+Day 4 - Qwen 3 Coder vs GPT OSS: OpenRouter Model Performance Showdown
+7:39
+Day 5 - Model Evaluation: Technical Metrics vs Business Outcomes
+10:17
+Day 5 - Python to Rust Code Translation: Testing Gemini 2.5 Pro with Cursor
+9:48
+Day 5 - Porting Python to Rust: Testing GPT, Claude, and Qwen Models
+9:37
+Day 5 - Open Source Model Wins? Rust Code Generation Speed Challenge
+13:24
+Day 1 - Introduction to RAG: Retrieval Augmented Generation Fundamentals
+9:15
+Day 1 - Building a Simple RAG Knowledge Assistant with GPT-4-1 Nano
+11:11
+Day 1 - Building a Simple RAG System: Dictionary Lookup and Context Retrieval
+9:15
+Day 1 - Vector Embeddings and Encoder LLMs: The Foundation of RAG
+9:18
+Day 1 - How Vector Embeddings Represent Meaning: From word2vec to Encoders
+7:51
+Day 1 - Understanding the Big Idea Behind RAG and Vector Data Stores
+7:10
+Day 2 - Vectors for RAG: Introduction to LangChain and Vector Databases
+7:54
+Day 2 - Breaking Documents into Chunks with LangChain Text Splitters
+12:12
+Day 2 - Encoder Models vs Vector Databases: OpenAI, BERT, Chroma & FAISS
+9:10
+Day 2 - Creating Vector Stores with Chroma and Visualizing Embeddings with t-SNE
+10:06
+Day 2 - 3D Vector Visualizations and Comparing Embedding Models
+11:51
+Day 3 - Building a Complete RAG Pipeline with LangChain and Chroma
+7:53
+Day 3 - Building a RAG Pipeline with LangChain: LLM & Retriever Setup
+10:05
+Day 3 - Building RAG with LangChain: Retriever and LLM Integration
+10:57
+Day 3 - Building Production RAG with Python Modules and Gradio UI
+12:03
+Day 3 - RAG with Conversation History: Building a Gradio UI and Debugging Chunki
+12:33
+Day 4 - RAG Evaluations: Measuring Performance and Iterating on Your Pipeline
+10:28
+Day 4 - Evaluating RAG Systems: Retrieval Metrics, LLM as Judge, and Golden Data
+13:45
+Day 4 - Evaluating RAG Systems: MRR, NDCG, and Test Data with Pydantic
+10:32
+Day 4 - LLM as a Judge: Evaluating RAG Answers with Structured Outputs
+9:17
+Day 4 - Running RAG Evaluations with Gradio: MRR, nDCG, and Test Results
+8:33
+Day 4 - Experimenting with Chunking Strategies and Embedding Models in RAG
+9:48
+Day 4 - Testing OpenAI Embeddings and Evaluating RAG Performance Gains
+7:29
+Day 5 - Advanced RAG Techniques: Pre-processing, Re-ranking & Evals
+8:55
+Day 5 - Advanced RAG Techniques: Chunking, Encoders, and Query Rewriting
+10:08
+Day 5 - Advanced RAG Techniques: Query Expansion, Re-ranking & GraphRAG
+11:51
+Day 5 - Building Advanced RAG Without LangChain: Semantic Chunking with LLMs
+13:07
+Day 5 - Creating Embeddings with Chroma, Visualizing with t-SNE, and Re-ranking
+11:15
+Day 5 - Building RAG Without LangChain: Re-ranking and Query Rewriting
+8:30
+Day 5 - Building Production RAG with Query Expansion and Multiprocessing
+11:53
+Day 5 - Advanced RAG Evaluation: From 0.73 to 0.91 MRR with GPT-4o
+11:03
+Day 5 - RAG Challenge: Beat My Results & Build Your Knowledge Worker
+8:37
+Day 1 - Training, Datasets, and Generalization: Your Capstone Begins
+9:15
+Day 1 - Finetuning LLMs & The Price is Right Capstone Project Intro
+12:16
+Day 1 - Curating Datasets: Finding Data Sources and Building Training Sets
+10:04
+Day 1 - Curating Amazon Data with Hugging Face for Price Prediction
+12:58
+Day 1 - Exploring Amazon Dataset Distribution and Removing Duplicates
+11:24
+Day 1 - Weighted Sampling with NumPy and Uploading Datasets to Hugging Face
+11:53
+Day 2 - Five-Step Strategy for Selecting and Applying LLMs to Business Problems
+10:28
+Day 2 - The Five-Step AI Process & Productionizing with MLOps
+8:27
+Day 2 - Data Pre-processing with LLMs and Groq Batch Mode
+9:44
+Day 2 - Batch Processing with Groq API and JSONL Files for LLM Workflows
+12:29
+Day 2 - Batch Processing with Groq: Running 22K LLM Requests for Under $1
+13:42
+Day 3 - Building Baseline Models with Traditional ML and XGBoost
+11:31
+Day 3 - Building Your First Baseline with Random Pricer and Scikit-learn
+11:54
+Day 3 - Baseline Models and Linear Regression with Scikit-Learn
+9:45
+Day 3 - Bag of Words and CountVectorizer for Linear Regression NLP
+7:53
+Day 3 - Random Forest and XGBoost: Ensemble Models in Scikit-Learn
+10:23
+Day 4 - Training Your First Neural Network and Testing Frontier Models
+10:47
+Day 4 - Human Baseline Performance vs Machine Learning Models in PyTorch
+8:32
+Day 4 - Building Your First Neural Network with PyTorch
+10:27
+Day 4 - Testing GPT-4o-mini and Claude Opus Against Neural Networks
+11:12
+Day 4 - Testing Gemini 3, GPT-5.1, Claude 4.5 & Grok on Price Prediction
+10:31
+Day 5 - Fine-Tuning OpenAI Frontier Models with Supervised Fine-Tuning
+12:59
+Day 5 - Fine-Tuning GPT-4o Nano with OpenAI's API for Custom Models
+9:18
+Day 5 - Fine-Tuning GPT-4o-mini-nano: Running Jobs and Monitoring Training
+9:03
+Day 5 - Fine-Tuning Results: When GPT-4o-mini Gets Worse, Not Better
+9:39
+Day 5 - When Fine-Tuning Frontier Models Fails & Building Deep Neural Networks
+9:51
+Day 5 - Deep Neural Network Redemption: 289M Parameters vs Frontier Models
+10:08
+Day 1 - Introduction to QLoRA for Fine-Tuning Open-Source Models
+7:44
+Day 1 - LoRA: Training LLaMA 3.2 with Low-Rank Adapters
+8:31
+Day 1 - LoRA Hyperparameters and QLoRA Quantization Explained
+11:38
+Day 1 - Setting Up Google Colab and Exploring LLaMA 3.2 Model Architecture
+14:33
+Day 1 - Loading Models with 8-bit and 4-bit Quantization Using QLoRA
+10:53
+Day 1 - LoRA Parameter Calculations and Model Size on Hugging Face
+8:42
+Day 2 - Preparing Your Dataset for Fine-Tuning with Token Limits
+10:35
+Day 2 - Fine-Tuning Data Prep: Rounding Prices and Token Length Optimization
+12:28
+Day 2 - Preparing Hugging Face Datasets and Testing Base LLaMA 3.2 Model
+10:33
+Day 2 - Base Models vs Chat Models: Understanding LLaMA Fine-Tuning
+11:22
+Day 3 - Fine-Tuning Hyperparameters: QLoRA Settings and Training Config
+11:17
+Day 3 - Learning Rate, Optimizers, and Training Hyperparameters for LoRA
+9:59
+Day 3 - Setting Up Training: Hyperparameters, qLoRA Config & Weights & Biases
+14:06
+Day 3 - Setting Up Weights & Biases and the HuggingFace SFT Trainer
+9:03
+Day 3 - Running Fine-Tuning with TRL and Monitoring Training in Weights & Biases
+9:21
+Day 4 - Monitoring Your Fine-Tuning Run with Weights & Biases
+10:39
+Day 4 - Full Dataset Training on Google Colab A100 with 800K Data Points
+10:17
+Day 4 - Monitoring Training Loss and Learning Rate in Weights & Biases
+8:57
+Day 4 - Analyzing Weights & Biases Results and Catching Overfitting
+10:31
+Day 4 - Managing Runs in Weights & Biases and Selecting Best Model Checkpoints
+5:40
+Day 5 - Results Day: Running Inference on Fine-Tuned Models & Loss Calculation D
+7:35
+Day 5 - Cross-Entropy Loss: How LLMs Calculate Probability Distributions
+8:55
+Day 5 - Testing Our Fine-Tuned LoRA Model Against GPT-4o Nano
+6:42
+Day 5 - Fine-Tuned LLaMA 3.2 Crushes GPT-5.1 and Frontier Models
+9:50
+Day 1 - Intro to Agentic AI & Serverless Deployment on Modal
+11:49
+Day 1 - Designing Agent Architectures & Modal Platform Setup
+8:57
+Day 1 - Running Python Locally and in the Cloud with Modal Remote Execution
+10:35
+Day 1 - Setting Up Modal Secrets and Deploying LLaMA Models to the Cloud
+10:22
+Day 1 - Deploying Fine-Tuned Models to Modal Cloud with Persistent Storage
+14:29
+Day 1 - Building Your First Agent with Modal Serverless AI
+6:18
+Day 2 - Building Advanced RAG with ChromaDB and Vector Stores (No LangChain)
+9:19
+Day 2 - Visualizing Chroma Vectors with t-SNE and Building a RAG Pipeline
+9:54
+Day 2 - RAG with GPT-4o vs Fine-Tuned Models: Building an Ensemble
+9:54
+Day 2 - Ensemble Model Success: Combining RAG, Neural Networks & Modal
+10:44
+Day 2 - Building and Testing an Ensemble Agent with Multiple LLM Calls
+4:30
+Day 3 - Structured Outputs with Pydantic and Constrained Decoding
+7:21
+Day 3 - Building a Deal Scanner with Structured Outputs and Pydantic
+9:06
+Day 3 - Structured Outputs for Parsing & Building a Pushover Notification Agent
+12:07
+Day 4 - Building Agentic AI: Planning Agents with Tool Orchestration
+7:59
+Day 4 - Building an Autonomous Planner Agent with Tool Calling and GPT-4
+8:09
+Day 4 - Building an Autonomous Multi-Agent System with Tool Calling and Agent Lo
+10:01
+Day 4 - Building a Multi-Model AI Platform: 34 Calls Across GPT-5, Claude & Open
+2:56
+Day 5 - Finalizing Your Agentic Workflow and Becoming an AI Engineer
+3:02
+Day 5 - Building the Price-Is-Right Agent UI with Gradio and DealAgentFramework
+6:17
+Day 5 - Course Wrap-Up: Your Journey to AI Engineer
+8:30
+Bonus Lecture - Your Exclusive Links
+2:42

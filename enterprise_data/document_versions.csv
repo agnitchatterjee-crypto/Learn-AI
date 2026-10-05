@@ -1,0 +1,876 @@
+doc_id,version,changed_by,changed_at,change_summary
+DOC-000001,1,49,2024-06-02,Initial version
+DOC-000001,2,117,2024-08-01,Fixed typos
+DOC-000001,3,117,2024-11-03,Added new section
+DOC-000002,1,168,2024-09-29,Initial version
+DOC-000002,2,8,2024-12-17,Clarified wording
+DOC-000002,3,74,2025-01-12,Updated values
+DOC-000002,4,102,2025-06-18,Fixed typos
+DOC-000002,5,200,2025-05-27,Fixed typos
+DOC-000003,1,154,2025-09-28,Initial version
+DOC-000003,2,154,2025-12-10,Updated values
+DOC-000004,1,193,2024-01-27,Initial version
+DOC-000004,2,159,2024-03-28,Added new section
+DOC-000005,1,200,2024-11-26,Initial version
+DOC-000005,2,102,2025-01-12,Added new section
+DOC-000005,3,159,2025-02-23,Clarified wording
+DOC-000006,1,117,2025-03-21,Initial version
+DOC-000006,2,117,2025-06-17,Clarified wording
+DOC-000007,1,71,2026-04-09,Initial version
+DOC-000007,2,49,2026-05-30,Fixed typos
+DOC-000007,3,49,2026-08-07,Annual review
+DOC-000008,1,192,2026-06-24,Initial version
+DOC-000008,2,102,2026-09-09,Fixed typos
+DOC-000009,1,33,2025-03-30,Initial version
+DOC-000009,2,42,2025-06-23,Annual review
+DOC-000009,3,187,2025-08-17,Clarified wording
+DOC-000010,1,52,2026-07-27,Initial version
+DOC-000010,2,18,2026-09-15,Updated values
+DOC-000010,3,154,2026-09-30,Clarified wording
+DOC-000010,4,187,2026-09-30,Clarified wording
+DOC-000011,1,71,2026-03-12,Initial version
+DOC-000011,2,7,2026-04-11,Annual review
+DOC-000011,3,115,2026-06-11,Annual review
+DOC-000012,1,22,2024-12-03,Initial version
+DOC-000012,2,112,2025-02-23,Updated values
+DOC-000013,1,23,2025-11-09,Initial version
+DOC-000013,2,131,2025-12-16,Annual review
+DOC-000013,3,91,2026-04-26,Clarified wording
+DOC-000013,4,143,2026-04-20,Clarified wording
+DOC-000013,5,30,2026-08-26,Added new section
+DOC-000014,1,159,2024-04-01,Initial version
+DOC-000014,2,200,2024-06-05,Updated values
+DOC-000014,3,8,2024-09-27,Updated values
+DOC-000014,4,159,2024-11-09,Annual review
+DOC-000015,1,192,2024-03-11,Initial version
+DOC-000015,2,168,2024-05-24,Added new section
+DOC-000015,3,96,2024-08-08,Clarified wording
+DOC-000016,1,200,2025-07-12,Initial version
+DOC-000016,2,193,2025-10-04,Updated values
+DOC-000016,3,8,2025-09-28,Fixed typos
+DOC-000016,4,192,2026-01-24,Annual review
+DOC-000017,1,96,2025-09-04,Initial version
+DOC-000017,2,200,2025-11-03,Added new section
+DOC-000017,3,74,2026-02-24,Clarified wording
+DOC-000017,4,159,2026-01-25,Updated values
+DOC-000018,1,193,2024-04-06,Initial version
+DOC-000018,2,168,2024-06-09,Added new section
+DOC-000018,3,159,2024-07-13,Clarified wording
+DOC-000019,1,15,2024-10-01,Initial version
+DOC-000019,2,183,2024-12-18,Clarified wording
+DOC-000020,1,136,2024-05-08,Initial version
+DOC-000020,2,200,2024-07-11,Added new section
+DOC-000020,3,136,2024-07-18,Clarified wording
+DOC-000021,1,69,2025-09-01,Initial version
+DOC-000022,1,50,2026-09-01,Initial version
+DOC-000022,2,70,2026-09-30,Added new section
+DOC-000023,1,74,2023-11-16,Initial version
+DOC-000023,2,136,2024-02-09,Clarified wording
+DOC-000024,1,193,2025-10-08,Initial version
+DOC-000024,2,96,2025-12-27,Updated values
+DOC-000024,3,8,2026-02-16,Fixed typos
+DOC-000025,1,102,2024-04-19,Initial version
+DOC-000025,2,8,2024-05-19,Added new section
+DOC-000025,3,200,2024-07-12,Annual review
+DOC-000025,4,193,2024-11-26,Clarified wording
+DOC-000026,1,136,2024-12-18,Initial version
+DOC-000027,1,74,2026-06-25,Initial version
+DOC-000027,2,168,2026-08-20,Annual review
+DOC-000028,1,33,2025-01-16,Initial version
+DOC-000028,2,188,2025-04-15,Updated values
+DOC-000028,3,18,2025-07-11,Clarified wording
+DOC-000028,4,104,2025-08-24,Clarified wording
+DOC-000028,5,52,2025-09-14,Annual review
+DOC-000029,1,193,2025-06-21,Initial version
+DOC-000029,2,74,2025-08-30,Added new section
+DOC-000029,3,8,2025-12-05,Annual review
+DOC-000029,4,193,2025-10-07,Added new section
+DOC-000030,1,193,2026-05-28,Initial version
+DOC-000030,2,8,2026-08-05,Updated values
+DOC-000030,3,200,2026-08-25,Annual review
+DOC-000030,4,102,2026-09-30,Clarified wording
+DOC-000030,5,96,2026-09-30,Annual review
+DOC-000031,1,188,2024-07-31,Initial version
+DOC-000031,2,33,2024-09-28,Clarified wording
+DOC-000031,3,18,2024-12-14,Fixed typos
+DOC-000032,1,48,2026-04-13,Initial version
+DOC-000032,2,13,2026-05-13,Annual review
+DOC-000033,1,42,2024-11-18,Initial version
+DOC-000033,2,9,2025-01-29,Annual review
+DOC-000033,3,178,2025-04-09,Annual review
+DOC-000033,4,42,2025-06-09,Added new section
+DOC-000033,5,187,2025-07-12,Clarified wording
+DOC-000034,1,102,2025-03-28,Initial version
+DOC-000035,1,192,2026-06-11,Initial version
+DOC-000035,2,168,2026-08-09,Fixed typos
+DOC-000036,1,109,2025-12-29,Initial version
+DOC-000036,2,42,2026-02-14,Updated values
+DOC-000036,3,52,2026-06-22,Annual review
+DOC-000036,4,104,2026-09-19,Clarified wording
+DOC-000036,5,18,2026-09-30,Clarified wording
+DOC-000037,1,83,2026-02-12,Initial version
+DOC-000037,2,83,2026-04-22,Annual review
+DOC-000038,1,71,2026-04-22,Initial version
+DOC-000038,2,71,2026-07-11,Fixed typos
+DOC-000038,3,16,2026-08-09,Updated values
+DOC-000038,4,115,2026-09-11,Clarified wording
+DOC-000039,1,168,2026-04-12,Initial version
+DOC-000039,2,159,2026-05-15,Added new section
+DOC-000040,1,168,2024-02-19,Initial version
+DOC-000040,2,192,2024-04-12,Annual review
+DOC-000040,3,8,2024-06-05,Added new section
+DOC-000040,4,102,2024-08-14,Added new section
+DOC-000041,1,7,2024-09-25,Initial version
+DOC-000041,2,71,2024-11-12,Clarified wording
+DOC-000041,3,16,2025-01-31,Fixed typos
+DOC-000042,1,74,2026-01-16,Initial version
+DOC-000042,2,200,2026-04-12,Fixed typos
+DOC-000043,1,200,2023-12-29,Initial version
+DOC-000043,2,8,2024-02-29,Annual review
+DOC-000044,1,159,2025-01-08,Initial version
+DOC-000044,2,193,2025-04-02,Updated values
+DOC-000044,3,193,2025-05-26,Clarified wording
+DOC-000045,1,102,2024-08-08,Initial version
+DOC-000045,2,193,2024-11-05,Annual review
+DOC-000045,3,102,2025-01-18,Added new section
+DOC-000045,4,159,2025-03-30,Added new section
+DOC-000045,5,193,2025-03-15,Clarified wording
+DOC-000046,1,9,2025-03-05,Initial version
+DOC-000046,2,154,2025-05-24,Updated values
+DOC-000046,3,109,2025-07-03,Updated values
+DOC-000047,1,52,2026-07-01,Initial version
+DOC-000047,2,187,2026-08-01,Clarified wording
+DOC-000047,3,188,2026-09-03,Updated values
+DOC-000047,4,107,2026-09-30,Annual review
+DOC-000047,5,188,2026-09-30,Added new section
+DOC-000048,1,74,2026-02-07,Initial version
+DOC-000048,2,168,2026-03-13,Updated values
+DOC-000048,3,193,2026-04-09,Fixed typos
+DOC-000048,4,74,2026-09-30,Fixed typos
+DOC-000049,1,42,2024-03-14,Initial version
+DOC-000049,2,52,2024-06-01,Added new section
+DOC-000049,3,188,2024-07-03,Updated values
+DOC-000050,1,109,2026-02-07,Initial version
+DOC-000050,2,52,2026-03-21,Fixed typos
+DOC-000050,3,52,2026-06-03,Annual review
+DOC-000050,4,107,2026-05-24,Fixed typos
+DOC-000051,1,52,2026-02-01,Initial version
+DOC-000051,2,154,2026-04-26,Fixed typos
+DOC-000051,3,9,2026-05-01,Annual review
+DOC-000051,4,104,2026-09-09,Fixed typos
+DOC-000051,5,109,2026-09-30,Clarified wording
+DOC-000052,1,14,2024-07-07,Initial version
+DOC-000052,2,50,2024-08-29,Annual review
+DOC-000052,3,144,2024-10-19,Updated values
+DOC-000052,4,90,2025-01-28,Clarified wording
+DOC-000053,1,25,2026-05-18,Initial version
+DOC-000053,2,38,2026-06-22,Clarified wording
+DOC-000053,3,126,2026-09-30,Fixed typos
+DOC-000053,4,37,2026-09-29,Annual review
+DOC-000053,5,124,2026-09-30,Fixed typos
+DOC-000054,1,115,2025-03-25,Initial version
+DOC-000054,2,7,2025-06-08,Annual review
+DOC-000054,3,49,2025-06-23,Added new section
+DOC-000055,1,7,2026-04-23,Initial version
+DOC-000055,2,115,2026-06-11,Fixed typos
+DOC-000055,3,7,2026-08-09,Added new section
+DOC-000055,4,115,2026-09-30,Annual review
+DOC-000056,1,104,2025-12-22,Initial version
+DOC-000056,2,42,2026-03-19,Added new section
+DOC-000056,3,109,2026-04-16,Fixed typos
+DOC-000057,1,13,2025-08-05,Initial version
+DOC-000057,2,112,2025-10-29,Updated values
+DOC-000058,1,7,2025-12-29,Initial version
+DOC-000058,2,117,2026-02-06,Updated values
+DOC-000058,3,71,2026-03-18,Updated values
+DOC-000058,4,71,2026-04-05,Annual review
+DOC-000059,1,193,2026-06-25,Initial version
+DOC-000059,2,193,2026-08-23,Annual review
+DOC-000059,3,136,2026-09-30,Updated values
+DOC-000059,4,136,2026-09-30,Added new section
+DOC-000059,5,200,2026-09-30,Added new section
+DOC-000060,1,16,2024-08-24,Initial version
+DOC-000060,2,115,2024-10-01,Clarified wording
+DOC-000060,3,117,2025-01-27,Added new section
+DOC-000060,4,49,2025-02-23,Annual review
+DOC-000061,1,49,2026-02-03,Initial version
+DOC-000061,2,117,2026-04-29,Clarified wording
+DOC-000061,3,117,2026-04-23,Annual review
+DOC-000061,4,71,2026-05-05,Clarified wording
+DOC-000061,5,7,2026-07-09,Updated values
+DOC-000062,1,16,2024-03-17,Initial version
+DOC-000062,2,7,2024-04-27,Fixed typos
+DOC-000062,3,7,2024-07-10,Updated values
+DOC-000063,1,178,2025-02-24,Initial version
+DOC-000063,2,104,2025-04-04,Fixed typos
+DOC-000063,3,104,2025-08-09,Updated values
+DOC-000064,1,52,2025-10-01,Initial version
+DOC-000064,2,107,2025-11-17,Fixed typos
+DOC-000064,3,104,2026-02-25,Fixed typos
+DOC-000065,1,52,2024-06-30,Initial version
+DOC-000065,2,187,2024-09-01,Clarified wording
+DOC-000065,3,33,2024-09-07,Updated values
+DOC-000066,1,49,2025-12-11,Initial version
+DOC-000066,2,115,2026-01-20,Updated values
+DOC-000066,3,115,2026-02-24,Fixed typos
+DOC-000067,1,71,2026-01-31,Initial version
+DOC-000067,2,115,2026-03-21,Fixed typos
+DOC-000068,1,188,2025-06-14,Initial version
+DOC-000068,2,187,2025-09-04,Annual review
+DOC-000068,3,9,2025-09-07,Clarified wording
+DOC-000068,4,18,2026-03-09,Fixed typos
+DOC-000069,1,16,2024-04-26,Initial version
+DOC-000069,2,7,2024-06-23,Added new section
+DOC-000070,1,8,2024-07-15,Initial version
+DOC-000070,2,192,2024-08-22,Annual review
+DOC-000071,1,159,2025-01-18,Initial version
+DOC-000071,2,74,2025-03-07,Clarified wording
+DOC-000072,1,168,2024-08-31,Initial version
+DOC-000072,2,192,2024-11-15,Added new section
+DOC-000072,3,193,2024-12-06,Added new section
+DOC-000073,1,200,2026-06-06,Initial version
+DOC-000073,2,96,2026-08-25,Added new section
+DOC-000073,3,168,2026-09-30,Fixed typos
+DOC-000073,4,136,2026-09-30,Updated values
+DOC-000074,1,168,2025-03-14,Initial version
+DOC-000074,2,96,2025-05-22,Updated values
+DOC-000074,3,192,2025-08-24,Added new section
+DOC-000075,1,102,2025-06-26,Initial version
+DOC-000075,2,102,2025-09-01,Annual review
+DOC-000075,3,8,2025-10-08,Clarified wording
+DOC-000075,4,193,2025-12-12,Clarified wording
+DOC-000076,1,136,2026-06-28,Initial version
+DOC-000076,2,159,2026-08-16,Added new section
+DOC-000076,3,8,2026-09-30,Fixed typos
+DOC-000076,4,136,2026-09-30,Annual review
+DOC-000076,5,136,2026-09-30,Added new section
+DOC-000077,1,200,2025-03-01,Initial version
+DOC-000077,2,192,2025-05-19,Fixed typos
+DOC-000077,3,192,2025-07-14,Clarified wording
+DOC-000077,4,193,2025-08-23,Updated values
+DOC-000078,1,7,2022-10-23,Initial version
+DOC-000079,1,117,2024-08-11,Initial version
+DOC-000079,2,117,2024-09-19,Clarified wording
+DOC-000080,1,96,2024-04-19,Initial version
+DOC-000080,2,74,2024-05-23,Updated values
+DOC-000080,3,8,2024-08-10,Added new section
+DOC-000080,4,193,2024-08-04,Added new section
+DOC-000081,1,102,2025-02-13,Initial version
+DOC-000081,2,8,2025-04-23,Added new section
+DOC-000081,3,159,2025-07-23,Clarified wording
+DOC-000081,4,200,2025-10-24,Added new section
+DOC-000081,5,168,2025-10-14,Annual review
+DOC-000082,1,162,2024-08-06,Initial version
+DOC-000083,1,45,2025-08-05,Initial version
+DOC-000083,2,129,2025-10-23,Clarified wording
+DOC-000084,1,74,2024-09-25,Initial version
+DOC-000084,2,8,2024-11-04,Added new section
+DOC-000084,3,193,2025-02-05,Annual review
+DOC-000085,1,8,2025-11-19,Initial version
+DOC-000085,2,193,2026-01-06,Added new section
+DOC-000085,3,192,2026-02-01,Fixed typos
+DOC-000085,4,74,2026-07-17,Fixed typos
+DOC-000086,1,7,2025-05-04,Initial version
+DOC-000086,2,7,2025-06-09,Clarified wording
+DOC-000087,1,16,2026-07-12,Initial version
+DOC-000087,2,117,2026-08-30,Updated values
+DOC-000087,3,7,2026-09-30,Clarified wording
+DOC-000088,1,192,2026-05-05,Initial version
+DOC-000088,2,102,2026-06-08,Added new section
+DOC-000089,1,102,2025-12-26,Initial version
+DOC-000089,2,96,2026-03-10,Added new section
+DOC-000089,3,136,2026-03-02,Clarified wording
+DOC-000089,4,200,2026-05-15,Added new section
+DOC-000089,5,102,2026-08-02,Added new section
+DOC-000090,1,22,2024-02-05,Initial version
+DOC-000090,2,68,2024-05-03,Annual review
+DOC-000091,1,71,2025-09-09,Initial version
+DOC-000091,2,49,2025-10-30,Added new section
+DOC-000091,3,115,2026-02-08,Annual review
+DOC-000092,1,167,2026-03-02,Initial version
+DOC-000092,2,15,2026-05-20,Fixed typos
+DOC-000092,3,142,2026-06-16,Fixed typos
+DOC-000093,1,170,2023-10-04,Initial version
+DOC-000093,2,153,2023-11-29,Added new section
+DOC-000093,3,170,2023-12-27,Fixed typos
+DOC-000093,4,183,2024-04-10,Added new section
+DOC-000093,5,189,2024-02-22,Clarified wording
+DOC-000094,1,116,2026-06-16,Initial version
+DOC-000094,2,30,2026-07-31,Fixed typos
+DOC-000094,3,41,2026-09-30,Annual review
+DOC-000094,4,146,2026-09-30,Added new section
+DOC-000094,5,98,2026-09-30,Fixed typos
+DOC-000095,1,89,2026-01-24,Initial version
+DOC-000095,2,150,2026-04-06,Added new section
+DOC-000095,3,2,2026-07-07,Clarified wording
+DOC-000096,1,90,2025-11-07,Initial version
+DOC-000097,1,29,2024-04-28,Initial version
+DOC-000097,2,91,2024-06-08,Added new section
+DOC-000097,3,142,2024-07-16,Clarified wording
+DOC-000098,1,113,2024-02-28,Initial version
+DOC-000098,2,116,2024-05-16,Fixed typos
+DOC-000099,1,111,2023-08-07,Initial version
+DOC-000099,2,124,2023-10-19,Clarified wording
+DOC-000100,1,93,2023-01-31,Initial version
+DOC-000100,2,124,2023-04-07,Annual review
+DOC-000100,3,50,2023-05-07,Fixed typos
+DOC-000100,4,111,2023-05-20,Added new section
+DOC-000101,1,101,2025-07-24,Initial version
+DOC-000101,2,38,2025-09-27,Fixed typos
+DOC-000102,1,82,2026-04-13,Initial version
+DOC-000102,2,170,2026-07-05,Fixed typos
+DOC-000102,3,144,2026-07-05,Clarified wording
+DOC-000102,4,90,2026-08-04,Updated values
+DOC-000102,5,82,2026-09-30,Clarified wording
+DOC-000103,1,116,2026-06-07,Initial version
+DOC-000103,2,116,2026-07-30,Updated values
+DOC-000103,3,45,2026-09-30,Clarified wording
+DOC-000103,4,25,2026-09-30,Clarified wording
+DOC-000104,1,46,2025-10-18,Initial version
+DOC-000105,1,182,2024-11-09,Initial version
+DOC-000106,1,167,2025-04-27,Initial version
+DOC-000106,2,189,2025-06-29,Added new section
+DOC-000107,1,38,2023-02-19,Initial version
+DOC-000108,1,124,2023-12-26,Initial version
+DOC-000108,2,101,2024-02-26,Clarified wording
+DOC-000108,3,162,2024-06-12,Annual review
+DOC-000109,1,172,2023-03-05,Initial version
+DOC-000109,2,29,2023-04-18,Annual review
+DOC-000109,3,186,2023-05-19,Clarified wording
+DOC-000109,4,89,2023-08-13,Added new section
+DOC-000110,1,182,2023-03-18,Initial version
+DOC-000110,2,148,2023-06-08,Annual review
+DOC-000111,1,91,2023-01-09,Initial version
+DOC-000112,1,183,2025-08-02,Initial version
+DOC-000112,2,14,2025-10-29,Clarified wording
+DOC-000112,3,41,2026-01-15,Clarified wording
+DOC-000112,4,90,2026-01-05,Fixed typos
+DOC-000112,5,149,2026-06-15,Fixed typos
+DOC-000113,1,23,2026-02-10,Initial version
+DOC-000113,2,32,2026-04-19,Annual review
+DOC-000113,3,46,2026-05-03,Added new section
+DOC-000113,4,90,2026-07-28,Annual review
+DOC-000114,1,111,2024-09-05,Initial version
+DOC-000114,2,82,2024-10-14,Annual review
+DOC-000114,3,124,2025-01-24,Updated values
+DOC-000115,1,110,2025-02-22,Initial version
+DOC-000115,2,101,2025-04-03,Fixed typos
+DOC-000115,3,116,2025-08-01,Updated values
+DOC-000115,4,182,2025-07-24,Updated values
+DOC-000116,1,101,2023-10-09,Initial version
+DOC-000116,2,2,2023-12-26,Clarified wording
+DOC-000116,3,144,2024-01-15,Fixed typos
+DOC-000116,4,116,2024-03-16,Updated values
+DOC-000117,1,162,2025-09-16,Initial version
+DOC-000117,2,189,2025-11-09,Updated values
+DOC-000117,3,64,2025-12-21,Updated values
+DOC-000118,1,199,2024-12-23,Initial version
+DOC-000118,2,129,2025-03-17,Added new section
+DOC-000118,3,172,2025-05-25,Added new section
+DOC-000119,1,93,2023-08-17,Initial version
+DOC-000119,2,41,2023-09-22,Annual review
+DOC-000120,1,98,2026-03-29,Initial version
+DOC-000120,2,25,2026-06-19,Clarified wording
+DOC-000120,3,172,2026-05-28,Fixed typos
+DOC-000121,1,129,2024-10-08,Initial version
+DOC-000122,1,182,2023-05-20,Initial version
+DOC-000122,2,111,2023-08-10,Updated values
+DOC-000122,3,15,2023-09-12,Updated values
+DOC-000122,4,116,2024-01-21,Added new section
+DOC-000123,1,148,2024-01-13,Initial version
+DOC-000123,2,64,2024-03-24,Annual review
+DOC-000123,3,70,2024-04-22,Updated values
+DOC-000124,1,41,2025-03-15,Initial version
+DOC-000124,2,110,2025-05-01,Updated values
+DOC-000124,3,82,2025-07-06,Updated values
+DOC-000124,4,91,2025-09-28,Updated values
+DOC-000125,1,101,2026-03-22,Initial version
+DOC-000125,2,25,2026-05-05,Fixed typos
+DOC-000125,3,182,2026-06-01,Clarified wording
+DOC-000125,4,111,2026-09-30,Added new section
+DOC-000125,5,116,2026-09-30,Fixed typos
+DOC-000126,1,182,2026-08-19,Initial version
+DOC-000126,2,144,2026-09-30,Annual review
+DOC-000127,1,89,2025-12-29,Initial version
+DOC-000128,1,37,2023-01-30,Initial version
+DOC-000129,1,182,2026-04-29,Initial version
+DOC-000129,2,29,2026-07-06,Annual review
+DOC-000129,3,182,2026-08-28,Updated values
+DOC-000130,1,150,2024-08-04,Initial version
+DOC-000130,2,111,2024-10-17,Annual review
+DOC-000130,3,183,2024-10-05,Added new section
+DOC-000130,4,183,2025-03-11,Updated values
+DOC-000131,1,111,2025-11-05,Initial version
+DOC-000131,2,195,2026-01-31,Clarified wording
+DOC-000131,3,82,2026-03-13,Fixed typos
+DOC-000131,4,195,2026-05-06,Clarified wording
+DOC-000132,1,21,2023-08-02,Initial version
+DOC-000133,1,124,2025-02-08,Initial version
+DOC-000134,1,111,2023-10-07,Initial version
+DOC-000134,2,170,2023-11-22,Clarified wording
+DOC-000134,3,162,2024-01-08,Updated values
+DOC-000134,4,41,2024-04-22,Added new section
+DOC-000135,1,110,2023-11-02,Initial version
+DOC-000136,1,195,2025-09-09,Initial version
+DOC-000136,2,32,2025-11-02,Added new section
+DOC-000136,3,148,2025-12-10,Added new section
+DOC-000137,1,50,2026-06-24,Initial version
+DOC-000138,1,89,2024-10-18,Initial version
+DOC-000138,2,149,2024-11-30,Added new section
+DOC-000138,3,148,2025-03-14,Annual review
+DOC-000139,1,150,2023-08-12,Initial version
+DOC-000139,2,142,2023-10-16,Annual review
+DOC-000139,3,143,2023-12-07,Updated values
+DOC-000140,1,89,2026-03-31,Initial version
+DOC-000140,2,113,2026-05-20,Clarified wording
+DOC-000140,3,183,2026-07-24,Annual review
+DOC-000141,1,170,2023-11-27,Initial version
+DOC-000142,1,98,2024-10-17,Initial version
+DOC-000143,1,15,2024-10-30,Initial version
+DOC-000143,2,144,2025-01-07,Updated values
+DOC-000143,3,143,2025-03-14,Added new section
+DOC-000143,4,183,2025-02-11,Fixed typos
+DOC-000143,5,70,2025-05-26,Added new section
+DOC-000144,1,116,2024-08-05,Initial version
+DOC-000144,2,149,2024-09-05,Fixed typos
+DOC-000144,3,91,2024-10-24,Fixed typos
+DOC-000145,1,186,2023-01-14,Initial version
+DOC-000145,2,70,2023-02-14,Fixed typos
+DOC-000145,3,60,2023-06-12,Annual review
+DOC-000146,1,32,2026-09-01,Initial version
+DOC-000146,2,30,2026-09-30,Updated values
+DOC-000146,3,46,2026-09-30,Updated values
+DOC-000147,1,41,2024-10-16,Initial version
+DOC-000147,2,189,2025-01-05,Annual review
+DOC-000148,1,91,2025-01-12,Initial version
+DOC-000148,2,110,2025-03-28,Fixed typos
+DOC-000148,3,189,2025-04-15,Added new section
+DOC-000148,4,162,2025-08-03,Added new section
+DOC-000148,5,142,2025-09-09,Annual review
+DOC-000149,1,101,2025-09-09,Initial version
+DOC-000149,2,116,2025-11-07,Added new section
+DOC-000149,3,113,2026-02-15,Clarified wording
+DOC-000150,1,41,2023-02-08,Initial version
+DOC-000150,2,2,2023-04-03,Fixed typos
+DOC-000150,3,186,2023-07-17,Annual review
+DOC-000150,4,167,2023-09-04,Updated values
+DOC-000151,1,153,2023-10-26,Initial version
+DOC-000151,2,110,2023-12-20,Annual review
+DOC-000151,3,14,2024-01-16,Fixed typos
+DOC-000152,1,149,2023-08-08,Initial version
+DOC-000152,2,25,2023-10-14,Fixed typos
+DOC-000152,3,110,2023-12-14,Updated values
+DOC-000153,1,60,2026-05-14,Initial version
+DOC-000153,2,150,2026-06-22,Annual review
+DOC-000153,3,93,2026-09-30,Updated values
+DOC-000154,1,195,2026-04-24,Initial version
+DOC-000154,2,143,2026-07-02,Fixed typos
+DOC-000155,1,38,2025-10-15,Initial version
+DOC-000155,2,182,2025-12-11,Clarified wording
+DOC-000156,1,172,2026-01-24,Initial version
+DOC-000157,1,73,2026-06-30,Initial version
+DOC-000157,2,27,2026-08-06,Updated values
+DOC-000157,3,118,2026-09-22,Annual review
+DOC-000157,4,135,2026-09-30,Annual review
+DOC-000157,5,160,2026-09-30,Clarified wording
+DOC-000158,1,184,2025-11-08,Initial version
+DOC-000158,2,120,2026-01-15,Clarified wording
+DOC-000158,3,39,2026-02-05,Updated values
+DOC-000159,1,175,2025-11-21,Initial version
+DOC-000159,2,134,2026-01-30,Annual review
+DOC-000159,3,31,2026-05-03,Annual review
+DOC-000159,4,180,2026-08-10,Fixed typos
+DOC-000160,1,178,2024-09-05,Initial version
+DOC-000160,2,154,2024-11-12,Updated values
+DOC-000160,3,188,2024-12-26,Updated values
+DOC-000161,1,107,2025-12-09,Initial version
+DOC-000161,2,188,2026-02-26,Updated values
+DOC-000161,3,188,2026-03-22,Fixed typos
+DOC-000162,1,71,2023-11-07,Initial version
+DOC-000162,2,7,2024-01-01,Updated values
+DOC-000163,1,81,2025-12-27,Initial version
+DOC-000163,2,164,2026-03-12,Updated values
+DOC-000163,3,94,2026-05-22,Annual review
+DOC-000163,4,65,2026-07-23,Clarified wording
+DOC-000164,1,16,2024-12-15,Initial version
+DOC-000164,2,49,2025-01-29,Updated values
+DOC-000164,3,117,2025-04-08,Annual review
+DOC-000165,1,52,2024-02-18,Initial version
+DOC-000165,2,188,2024-04-08,Annual review
+DOC-000166,1,109,2023-10-09,Initial version
+DOC-000167,1,88,2023-03-18,Initial version
+DOC-000167,2,79,2023-05-22,Clarified wording
+DOC-000167,3,5,2023-07-18,Clarified wording
+DOC-000168,1,76,2026-05-19,Initial version
+DOC-000168,2,61,2026-07-30,Clarified wording
+DOC-000169,1,61,2024-01-31,Initial version
+DOC-000169,2,151,2024-03-29,Added new section
+DOC-000170,1,199,2025-02-24,Initial version
+DOC-000170,2,37,2025-05-06,Fixed typos
+DOC-000170,3,98,2025-05-30,Added new section
+DOC-000170,4,14,2025-09-16,Clarified wording
+DOC-000170,5,37,2025-11-10,Fixed typos
+DOC-000171,1,104,2023-11-24,Initial version
+DOC-000172,1,181,2026-05-25,Initial version
+DOC-000172,2,134,2026-08-15,Annual review
+DOC-000173,1,47,2023-05-07,Initial version
+DOC-000173,2,147,2023-08-03,Clarified wording
+DOC-000173,3,132,2023-09-14,Added new section
+DOC-000174,1,140,2026-04-09,Initial version
+DOC-000175,1,176,2023-01-07,Initial version
+DOC-000175,2,197,2023-03-16,Annual review
+DOC-000175,3,97,2023-03-29,Updated values
+DOC-000175,4,26,2023-08-05,Added new section
+DOC-000175,5,57,2023-06-29,Clarified wording
+DOC-000176,1,145,2023-03-06,Initial version
+DOC-000176,2,185,2023-05-21,Updated values
+DOC-000176,3,78,2023-07-21,Annual review
+DOC-000177,1,169,2024-04-01,Initial version
+DOC-000178,1,117,2024-07-18,Initial version
+DOC-000178,2,115,2024-10-06,Clarified wording
+DOC-000178,3,49,2024-12-13,Updated values
+DOC-000178,4,7,2024-12-26,Added new section
+DOC-000179,1,88,2023-04-01,Initial version
+DOC-000179,2,194,2023-06-03,Fixed typos
+DOC-000179,3,12,2023-09-12,Annual review
+DOC-000179,4,87,2023-10-10,Clarified wording
+DOC-000179,5,84,2023-09-29,Clarified wording
+DOC-000180,1,117,2026-05-09,Initial version
+DOC-000180,2,7,2026-07-05,Fixed typos
+DOC-000181,1,68,2026-07-06,Initial version
+DOC-000181,2,48,2026-08-10,Updated values
+DOC-000182,1,96,2023-11-02,Initial version
+DOC-000182,2,8,2024-01-02,Clarified wording
+DOC-000183,1,164,2024-05-12,Initial version
+DOC-000183,2,133,2024-07-26,Annual review
+DOC-000183,3,196,2024-07-22,Updated values
+DOC-000183,4,169,2024-10-06,Updated values
+DOC-000184,1,40,2026-05-23,Initial version
+DOC-000184,2,176,2026-07-18,Clarified wording
+DOC-000184,3,57,2026-08-02,Fixed typos
+DOC-000184,4,6,2026-09-30,Fixed typos
+DOC-000185,1,7,2023-02-01,Initial version
+DOC-000185,2,71,2023-04-15,Clarified wording
+DOC-000185,3,117,2023-06-11,Fixed typos
+DOC-000186,1,8,2026-02-04,Initial version
+DOC-000186,2,168,2026-03-21,Fixed typos
+DOC-000186,3,96,2026-05-07,Added new section
+DOC-000187,1,184,2023-04-26,Initial version
+DOC-000188,1,169,2026-01-28,Initial version
+DOC-000188,2,161,2026-03-16,Clarified wording
+DOC-000189,1,194,2026-08-01,Initial version
+DOC-000189,2,165,2026-09-30,Updated values
+DOC-000189,3,84,2026-09-30,Annual review
+DOC-000189,4,184,2026-09-30,Annual review
+DOC-000189,5,84,2026-09-30,Updated values
+DOC-000190,1,190,2026-09-25,Initial version
+DOC-000191,1,71,2026-07-11,Initial version
+DOC-000191,2,117,2026-08-30,Fixed typos
+DOC-000191,3,16,2026-09-30,Updated values
+DOC-000191,4,16,2026-09-30,Added new section
+DOC-000192,1,77,2023-09-14,Initial version
+DOC-000192,2,127,2023-11-28,Updated values
+DOC-000193,1,149,2025-03-08,Initial version
+DOC-000193,2,167,2025-04-19,Clarified wording
+DOC-000193,3,45,2025-06-14,Annual review
+DOC-000193,4,38,2025-10-25,Fixed typos
+DOC-000194,1,49,2024-11-08,Initial version
+DOC-000194,2,71,2025-02-03,Fixed typos
+DOC-000195,1,191,2026-05-30,Initial version
+DOC-000196,1,42,2025-03-08,Initial version
+DOC-000196,2,109,2025-06-01,Added new section
+DOC-000196,3,52,2025-06-20,Added new section
+DOC-000197,1,117,2024-03-11,Initial version
+DOC-000197,2,49,2024-04-28,Annual review
+DOC-000197,3,71,2024-07-16,Updated values
+DOC-000197,4,71,2024-10-24,Updated values
+DOC-000198,1,159,2024-01-22,Initial version
+DOC-000198,2,96,2024-03-30,Annual review
+DOC-000198,3,8,2024-06-22,Clarified wording
+DOC-000198,4,136,2024-05-28,Added new section
+DOC-000199,1,6,2026-08-26,Initial version
+DOC-000200,1,196,2026-07-07,Initial version
+DOC-000200,2,161,2026-08-28,Fixed typos
+DOC-000200,3,196,2026-09-30,Clarified wording
+DOC-000200,4,130,2026-09-30,Added new section
+DOC-000200,5,80,2026-09-30,Clarified wording
+DOC-000201,1,71,2023-08-04,Initial version
+DOC-000202,1,171,2023-03-31,Initial version
+DOC-000203,1,9,2024-06-30,Initial version
+DOC-000204,1,112,2026-07-24,Initial version
+DOC-000204,2,155,2026-09-30,Clarified wording
+DOC-000204,3,177,2026-09-30,Fixed typos
+DOC-000204,4,13,2026-09-30,Updated values
+DOC-000204,5,68,2026-09-30,Fixed typos
+DOC-000205,1,49,2024-12-16,Initial version
+DOC-000205,2,16,2025-01-21,Updated values
+DOC-000205,3,117,2025-03-24,Annual review
+DOC-000206,1,16,2023-04-09,Initial version
+DOC-000207,1,57,2024-07-26,Initial version
+DOC-000207,2,151,2024-09-27,Clarified wording
+DOC-000208,1,161,2026-09-28,Initial version
+DOC-000208,2,81,2026-09-30,Fixed typos
+DOC-000208,3,85,2026-09-30,Updated values
+DOC-000208,4,191,2026-09-30,Updated values
+DOC-000209,1,170,2025-06-08,Initial version
+DOC-000209,2,89,2025-08-19,Added new section
+DOC-000209,3,113,2025-11-23,Clarified wording
+DOC-000210,1,122,2023-04-10,Initial version
+DOC-000210,2,78,2023-05-23,Added new section
+DOC-000210,3,173,2023-07-02,Added new section
+DOC-000210,4,174,2023-08-23,Updated values
+DOC-000211,1,187,2024-09-04,Initial version
+DOC-000211,2,107,2024-10-28,Annual review
+DOC-000211,3,154,2025-02-06,Updated values
+DOC-000212,1,197,2023-08-26,Initial version
+DOC-000213,1,178,2026-03-24,Initial version
+DOC-000213,2,9,2026-05-19,Fixed typos
+DOC-000214,1,49,2023-05-28,Initial version
+DOC-000214,2,71,2023-08-13,Added new section
+DOC-000214,3,117,2023-10-03,Updated values
+DOC-000214,4,115,2024-01-05,Updated values
+DOC-000214,5,7,2024-05-15,Fixed typos
+DOC-000215,1,129,2025-06-19,Initial version
+DOC-000215,2,25,2025-09-07,Fixed typos
+DOC-000215,3,149,2025-12-06,Clarified wording
+DOC-000215,4,189,2026-01-30,Annual review
+DOC-000216,1,130,2024-06-22,Initial version
+DOC-000216,2,181,2024-08-18,Clarified wording
+DOC-000216,3,31,2024-11-07,Clarified wording
+DOC-000216,4,92,2025-01-14,Annual review
+DOC-000217,1,158,2026-07-06,Initial version
+DOC-000218,1,71,2025-04-03,Initial version
+DOC-000218,2,71,2025-06-25,Fixed typos
+DOC-000219,1,140,2023-03-22,Initial version
+DOC-000220,1,80,2024-05-11,Initial version
+DOC-000221,1,65,2024-12-01,Initial version
+DOC-000221,2,80,2025-01-15,Fixed typos
+DOC-000222,1,83,2026-08-13,Initial version
+DOC-000222,2,190,2026-09-30,Clarified wording
+DOC-000222,3,177,2026-09-30,Added new section
+DOC-000223,1,188,2023-12-30,Initial version
+DOC-000223,2,33,2024-03-21,Clarified wording
+DOC-000223,3,42,2024-05-30,Added new section
+DOC-000223,4,9,2024-04-30,Fixed typos
+DOC-000224,1,7,2025-10-19,Initial version
+DOC-000224,2,115,2026-01-03,Added new section
+DOC-000224,3,49,2026-04-11,Added new section
+DOC-000224,4,117,2026-07-03,Clarified wording
+DOC-000225,1,66,2026-03-07,Initial version
+DOC-000225,2,81,2026-05-01,Clarified wording
+DOC-000226,1,67,2026-02-16,Initial version
+DOC-000227,1,5,2026-05-09,Initial version
+DOC-000227,2,165,2026-06-16,Updated values
+DOC-000228,1,97,2024-04-15,Initial version
+DOC-000228,2,57,2024-05-16,Annual review
+DOC-000228,3,151,2024-06-19,Annual review
+DOC-000228,4,97,2024-08-18,Fixed typos
+DOC-000228,5,26,2025-02-24,Clarified wording
+DOC-000229,1,178,2024-11-13,Initial version
+DOC-000229,2,18,2025-01-25,Clarified wording
+DOC-000229,3,18,2025-04-12,Annual review
+DOC-000229,4,104,2025-06-24,Added new section
+DOC-000229,5,42,2025-06-20,Updated values
+DOC-000230,1,49,2026-05-09,Initial version
+DOC-000230,2,115,2026-07-06,Updated values
+DOC-000230,3,7,2026-09-30,Updated values
+DOC-000231,1,107,2025-01-23,Initial version
+DOC-000231,2,18,2025-03-18,Added new section
+DOC-000231,3,52,2025-05-06,Updated values
+DOC-000232,1,136,2026-03-25,Initial version
+DOC-000232,2,74,2026-05-07,Annual review
+DOC-000232,3,8,2026-09-06,Added new section
+DOC-000233,1,75,2026-09-17,Initial version
+DOC-000234,1,58,2023-09-09,Initial version
+DOC-000234,2,6,2023-10-19,Clarified wording
+DOC-000235,1,33,2026-09-29,Initial version
+DOC-000235,2,9,2026-09-30,Updated values
+DOC-000235,3,42,2026-09-30,Added new section
+DOC-000236,1,106,2026-03-09,Initial version
+DOC-000236,2,106,2026-05-27,Clarified wording
+DOC-000236,3,134,2026-05-28,Clarified wording
+DOC-000236,4,196,2026-09-30,Clarified wording
+DOC-000236,5,62,2026-09-30,Clarified wording
+DOC-000237,1,86,2023-07-07,Initial version
+DOC-000237,2,123,2023-08-24,Added new section
+DOC-000237,3,5,2023-11-18,Updated values
+DOC-000237,4,171,2023-12-03,Updated values
+DOC-000237,5,79,2024-04-28,Annual review
+DOC-000238,1,97,2026-07-30,Initial version
+DOC-000238,2,197,2026-09-30,Clarified wording
+DOC-000238,3,6,2026-09-30,Added new section
+DOC-000238,4,26,2026-09-30,Annual review
+DOC-000238,5,40,2026-09-30,Annual review
+DOC-000239,1,168,2024-02-29,Initial version
+DOC-000239,2,193,2024-05-20,Annual review
+DOC-000239,3,200,2024-05-15,Updated values
+DOC-000240,1,192,2026-09-04,Initial version
+DOC-000240,2,136,2026-09-30,Clarified wording
+DOC-000240,3,193,2026-09-30,Added new section
+DOC-000240,4,74,2026-09-30,Annual review
+DOC-000240,5,200,2026-09-30,Clarified wording
+DOC-000241,1,119,2026-09-18,Initial version
+DOC-000241,2,35,2026-09-30,Clarified wording
+DOC-000241,3,158,2026-09-30,Updated values
+DOC-000241,4,72,2026-09-30,Fixed typos
+DOC-000241,5,54,2026-09-30,Added new section
+DOC-000242,1,187,2024-10-06,Initial version
+DOC-000242,2,188,2024-11-23,Annual review
+DOC-000242,3,154,2025-02-23,Fixed typos
+DOC-000242,4,52,2025-04-17,Clarified wording
+DOC-000243,1,94,2026-09-28,Initial version
+DOC-000243,2,164,2026-09-30,Updated values
+DOC-000244,1,71,2025-11-21,Initial version
+DOC-000244,2,16,2026-01-27,Clarified wording
+DOC-000244,3,117,2026-01-21,Updated values
+DOC-000244,4,16,2026-07-19,Clarified wording
+DOC-000245,1,9,2025-02-24,Initial version
+DOC-000246,1,155,2026-09-19,Initial version
+DOC-000246,2,48,2026-09-30,Fixed typos
+DOC-000246,3,48,2026-09-30,Annual review
+DOC-000246,4,163,2026-09-30,Annual review
+DOC-000246,5,68,2026-09-30,Fixed typos
+DOC-000247,1,120,2023-05-31,Initial version
+DOC-000247,2,84,2023-08-28,Added new section
+DOC-000247,3,171,2023-09-08,Fixed typos
+DOC-000247,4,63,2023-11-19,Added new section
+DOC-000247,5,88,2024-03-29,Updated values
+DOC-000248,1,114,2026-09-03,Initial version
+DOC-000249,1,115,2026-06-12,Initial version
+DOC-000250,1,16,2024-06-29,Initial version
+DOC-000250,2,7,2024-09-25,Updated values
+DOC-000251,1,68,2026-09-26,Initial version
+DOC-000252,1,104,2025-05-24,Initial version
+DOC-000252,2,107,2025-07-11,Fixed typos
+DOC-000252,3,18,2025-11-18,Fixed typos
+DOC-000253,1,132,2023-04-21,Initial version
+DOC-000253,2,156,2023-06-01,Clarified wording
+DOC-000253,3,51,2023-09-21,Added new section
+DOC-000253,4,179,2023-10-22,Clarified wording
+DOC-000254,1,184,2023-07-22,Initial version
+DOC-000254,2,194,2023-09-21,Added new section
+DOC-000254,3,184,2023-11-23,Clarified wording
+DOC-000254,4,63,2023-12-26,Clarified wording
+DOC-000255,1,58,2026-06-23,Initial version
+DOC-000255,2,43,2026-09-11,Fixed typos
+DOC-000256,1,178,2026-03-12,Initial version
+DOC-000257,1,67,2026-07-20,Initial version
+DOC-000257,2,100,2026-09-04,Added new section
+DOC-000258,1,134,2026-01-12,Initial version
+DOC-000259,1,176,2026-06-01,Initial version
+DOC-000259,2,43,2026-07-29,Added new section
+DOC-000260,1,88,2026-05-01,Initial version
+DOC-000260,2,108,2026-07-12,Clarified wording
+DOC-000260,3,39,2026-09-30,Updated values
+DOC-000260,4,79,2026-09-30,Clarified wording
+DOC-000260,5,84,2026-09-30,Clarified wording
+DOC-000261,1,16,2024-10-31,Initial version
+DOC-000261,2,71,2025-01-07,Fixed typos
+DOC-000261,3,49,2025-01-22,Updated values
+DOC-000261,4,49,2025-03-10,Clarified wording
+DOC-000262,1,63,2023-06-13,Initial version
+DOC-000262,2,79,2023-08-25,Clarified wording
+DOC-000263,1,187,2025-04-07,Initial version
+DOC-000264,1,49,2023-05-29,Initial version
+DOC-000264,2,7,2023-06-28,Fixed typos
+DOC-000264,3,7,2023-09-03,Fixed typos
+DOC-000264,4,117,2023-11-19,Annual review
+DOC-000265,1,18,2024-06-22,Initial version
+DOC-000265,2,178,2024-08-23,Annual review
+DOC-000266,1,191,2026-04-20,Initial version
+DOC-000266,2,92,2026-07-13,Added new section
+DOC-000266,3,24,2026-09-30,Annual review
+DOC-000266,4,81,2026-09-30,Updated values
+DOC-000267,1,111,2025-04-26,Initial version
+DOC-000267,2,172,2025-06-30,Annual review
+DOC-000268,1,54,2026-09-17,Initial version
+DOC-000268,2,27,2026-09-30,Fixed typos
+DOC-000268,3,73,2026-09-30,Clarified wording
+DOC-000269,1,175,2026-03-27,Initial version
+DOC-000270,1,173,2023-03-13,Initial version
+DOC-000270,2,103,2023-06-08,Updated values
+DOC-000271,1,59,2024-02-17,Initial version
+DOC-000271,2,59,2024-05-07,Added new section
+DOC-000271,3,75,2024-07-02,Annual review
+DOC-000271,4,59,2024-09-14,Added new section
+DOC-000271,5,40,2024-07-05,Annual review
+DOC-000272,1,192,2024-01-23,Initial version
+DOC-000273,1,157,2026-07-18,Initial version
+DOC-000273,2,63,2026-09-25,Annual review
+DOC-000274,1,177,2026-08-19,Initial version
+DOC-000274,2,163,2026-09-30,Annual review
+DOC-000274,3,13,2026-09-30,Fixed typos
+DOC-000274,4,190,2026-09-30,Updated values
+DOC-000275,1,7,2023-02-12,Initial version
+DOC-000275,2,16,2023-05-11,Added new section
+DOC-000275,3,117,2023-06-21,Fixed typos
+DOC-000275,4,71,2023-07-27,Updated values
+DOC-000275,5,71,2023-09-03,Annual review
+DOC-000276,1,184,2026-06-10,Initial version
+DOC-000276,2,140,2026-07-12,Annual review
+DOC-000277,1,4,2026-07-19,Initial version
+DOC-000277,2,66,2026-08-30,Updated values
+DOC-000277,3,92,2026-09-30,Updated values
+DOC-000277,4,106,2026-09-30,Updated values
+DOC-000278,1,52,2025-03-02,Initial version
+DOC-000278,2,187,2025-04-22,Added new section
+DOC-000278,3,42,2025-06-12,Added new section
+DOC-000278,4,9,2025-08-19,Added new section
+DOC-000278,5,187,2025-10-17,Added new section
+DOC-000279,1,84,2023-10-25,Initial version
+DOC-000279,2,194,2023-12-06,Added new section
+DOC-000279,3,123,2024-03-21,Clarified wording
+DOC-000280,1,18,2024-05-06,Initial version
+DOC-000281,1,194,2023-09-18,Initial version
+DOC-000282,1,58,2026-08-11,Initial version
+DOC-000282,2,61,2026-09-28,Updated values
+DOC-000282,3,26,2026-09-30,Annual review
+DOC-000283,1,171,2026-02-27,Initial version
+DOC-000283,2,140,2026-05-06,Clarified wording
+DOC-000283,3,171,2026-05-29,Added new section
+DOC-000284,1,192,2026-04-22,Initial version
+DOC-000284,2,96,2026-07-14,Clarified wording
+DOC-000284,3,74,2026-07-29,Clarified wording
+DOC-000284,4,193,2026-09-30,Fixed typos
+DOC-000285,1,163,2026-08-28,Initial version
+DOC-000285,2,112,2026-09-30,Fixed typos
+DOC-000286,1,42,2025-07-01,Initial version
+DOC-000286,2,188,2025-08-05,Fixed typos
+DOC-000287,1,187,2023-11-29,Initial version
+DOC-000288,1,52,2023-12-06,Initial version
+DOC-000288,2,104,2024-01-13,Fixed typos
+DOC-000288,3,33,2024-03-17,Annual review
+DOC-000288,4,188,2024-03-23,Added new section
+DOC-000289,1,31,2026-07-10,Initial version
+DOC-000289,2,80,2026-08-28,Annual review
+DOC-000289,3,80,2026-09-30,Fixed typos
+DOC-000289,4,81,2026-09-30,Updated values
+DOC-000290,1,58,2026-06-10,Initial version
+DOC-000290,2,58,2026-07-24,Annual review
+DOC-000291,1,57,2023-10-13,Initial version
+DOC-000291,2,61,2023-11-20,Clarified wording
+DOC-000291,3,176,2024-04-05,Annual review
+DOC-000292,1,198,2024-05-01,Initial version
+DOC-000293,1,45,2025-07-27,Initial version
+DOC-000294,1,131,2025-07-14,Initial version
+DOC-000294,2,150,2025-09-16,Fixed typos
+DOC-000295,1,95,2023-06-15,Initial version
+DOC-000295,2,173,2023-08-28,Added new section
+DOC-000295,3,55,2023-11-18,Annual review
+DOC-000296,1,87,2026-06-01,Initial version
+DOC-000297,1,123,2026-07-07,Initial version
+DOC-000297,2,79,2026-08-10,Added new section
+DOC-000297,3,87,2026-09-30,Fixed typos
+DOC-000297,4,63,2026-09-30,Fixed typos
+DOC-000297,5,194,2026-09-30,Added new section
+DOC-000298,1,177,2026-09-13,Initial version
+DOC-000298,2,83,2026-09-30,Fixed typos
+DOC-000298,3,48,2026-09-30,Annual review
+DOC-000299,1,24,2026-01-30,Initial version
+DOC-000299,2,130,2026-03-28,Annual review
+DOC-000299,3,31,2026-06-09,Clarified wording
+DOC-000299,4,130,2026-05-03,Fixed typos
+DOC-000300,1,76,2026-06-15,Initial version
+DOC-000300,2,43,2026-08-12,Updated values
+DOC-000300,3,26,2026-09-30,Added new section
+DOC-000300,4,6,2026-09-30,Fixed typos

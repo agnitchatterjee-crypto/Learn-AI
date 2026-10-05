@@ -1,0 +1,201 @@
+employee_id,first_name,last_name,full_name,email,department_id,title,level,manager_id,location_city,region,hire_date,employment_status
+1,Priya,Kim,Priya Kim,priya.kim@northwind-analytics.example.com,EXE,Chief Executive Officer,6,,New York,United States,2015-01-31,active
+2,Layla,Kim,Layla Kim,layla.kim@northwind-analytics.example.com,ENG,Head of Engineering,5,1,Austin,United States,2018-02-11,active
+3,Sneha,Bose,Sneha Bose,sneha.bose@northwind-analytics.example.com,SAL,Head of Sales,5,1,Kolkata,India,2014-08-10,active
+4,Zara,Silva,Zara Silva,zara.silva@northwind-analytics.example.com,SUP,Head of Customer Support,5,1,Austin,United States,2018-02-10,active
+5,Aarav,Park,Aarav Park,aarav.park@northwind-analytics.example.com,OPS,Head of Operations,5,1,Austin,United States,2013-10-15,active
+6,Kavya,Park,Kavya Park,kavya.park@northwind-analytics.example.com,DAT,Head of Data & Analytics,5,1,Hyderabad,India,2015-10-10,active
+7,Oliver,Chen,Oliver Chen,oliver.chen@northwind-analytics.example.com,FIN,Head of Finance,5,1,Hyderabad,India,2014-12-19,active
+8,Daniel,Reddy,Daniel Reddy,daniel.reddy@northwind-analytics.example.com,HR,Head of Human Resources,5,1,Manchester,United Kingdom,2018-03-11,active
+9,Zara,Iyer,Zara Iyer,zara.iyer@northwind-analytics.example.com,IT,Head of IT Services,5,1,Austin,United States,2012-07-06,active
+10,Nikhil,Nair,Nikhil Nair,nikhil.nair@northwind-analytics.example.com,MKT,Head of Marketing,5,1,Munich,Germany,2016-04-05,active
+11,Oliver,Bose,Oliver Bose,oliver.bose@northwind-analytics.example.com,LEG,Head of Legal & Compliance,5,1,Kolkata,India,2014-12-29,active
+12,Ethan,Menon,Ethan Menon,ethan.menon@northwind-analytics.example.com,OPS,"Manager, Operations",4,5,Pune,India,2015-11-01,active
+13,Lena,Ghosh,Lena Ghosh,lena.ghosh@northwind-analytics.example.com,LEG,"Manager, Legal & Compliance",4,11,New York,United States,2021-09-05,active
+14,James,Clarke,James Clarke,james.clarke@northwind-analytics.example.com,ENG,"Manager, Engineering",4,2,Pune,India,2017-01-01,active
+15,Sofia,Wright,Sofia Wright,sofia.wright@northwind-analytics.example.com,ENG,"Manager, Engineering",4,2,London,United Kingdom,2015-08-09,active
+16,Maya,Lim,Maya Lim,maya.lim@northwind-analytics.example.com,FIN,"Manager, Finance",4,7,Manchester,United Kingdom,2018-10-21,active
+17,Rahul,Fischer,Rahul Fischer,rahul.fischer@northwind-analytics.example.com,SAL,"Manager, Sales",4,3,Berlin,Germany,2019-07-15,active
+18,Sourav,Ali,Sourav Ali,sourav.ali@northwind-analytics.example.com,IT,"Manager, IT Services",4,9,Hyderabad,India,2018-09-26,active
+19,Marta,Rao,Marta Rao,marta.rao@northwind-analytics.example.com,SAL,"Manager, Sales",4,3,Berlin,Germany,2020-03-16,active
+20,Jonas,Park,Jonas Park,jonas.park@northwind-analytics.example.com,DAT,"Manager, Data & Analytics",4,6,Pune,India,2016-12-28,active
+21,Grace,Sharma,Grace Sharma,grace.sharma@northwind-analytics.example.com,ENG,"Manager, Engineering",4,2,Manchester,United Kingdom,2022-02-05,active
+22,Felix,Nair,Felix Nair,felix.nair@northwind-analytics.example.com,LEG,"Manager, Legal & Compliance",4,11,Singapore,Singapore,2021-01-05,active
+23,Jonas,Nguyen,Jonas Nguyen,jonas.nguyen@northwind-analytics.example.com,ENG,"Manager, Engineering",4,2,Singapore,Singapore,2019-12-13,active
+24,Sophie,Sen,Sophie Sen,sophie.sen@northwind-analytics.example.com,SUP,"Manager, Customer Support",4,4,Kolkata,India,2016-09-07,active
+25,Arjun,Park,Arjun Park,arjun.park@northwind-analytics.example.com,ENG,"Manager, Engineering",4,2,London,United Kingdom,2019-12-22,active
+26,Sourav,Rao,Sourav Rao,sourav.rao@northwind-analytics.example.com,DAT,"Manager, Data & Analytics",4,6,Munich,Germany,2019-12-02,active
+27,Noah,Larsen,Noah Larsen,noah.larsen@northwind-analytics.example.com,MKT,"Manager, Marketing",4,10,Munich,Germany,2021-09-26,active
+28,Sophie,Evans,Sophie Evans,sophie.evans@northwind-analytics.example.com,SAL,"Manager, Sales",4,3,New York,United States,2019-10-21,active
+29,Mei,Becker,Mei Becker,mei.becker@northwind-analytics.example.com,ENG,"Manager, Engineering",4,2,Kolkata,India,2016-07-31,active
+30,Nikhil,Iyer,Nikhil Iyer,nikhil.iyer@northwind-analytics.example.com,ENG,"Manager, Engineering",4,2,New York,United States,2014-05-09,active
+31,Anna,Bose,Anna Bose,anna.bose@northwind-analytics.example.com,SUP,"Manager, Customer Support",4,4,Hyderabad,India,2020-01-18,active
+32,Omar,Hughes,Omar Hughes,omar.hughes@northwind-analytics.example.com,ENG,Platform Engineer,2,23,Hyderabad,India,2022-12-12,active
+33,Emily,Nair,Emily Nair,emily.nair@northwind-analytics.example.com,IT,Associate IT Support Engineer,1,18,Manchester,United Kingdom,2020-07-29,active
+34,Arjun,Evans,Arjun Evans,arjun.evans@northwind-analytics.example.com,ENG,Associate Platform Engineer,1,23,Berlin,Germany,2017-03-13,terminated
+35,Lukas,Bose,Lukas Bose,lukas.bose@northwind-analytics.example.com,MKT,Senior Content Strategist,3,27,London,United Kingdom,2023-12-30,active
+36,Tom,Larsen,Tom Larsen,tom.larsen@northwind-analytics.example.com,SAL,Senior Sales Engineer,3,19,Pune,India,2025-11-30,active
+37,Ananya,Mukherjee,Ananya Mukherjee,ananya.mukherjee@northwind-analytics.example.com,ENG,Associate Software Engineer,1,29,Seattle,United States,2025-09-10,active
+38,Arjun,Ali,Arjun Ali,arjun.ali@northwind-analytics.example.com,ENG,Senior Platform Engineer,3,14,Bengaluru,India,2020-04-10,active
+39,Wei,Weber,Wei Weber,wei.weber@northwind-analytics.example.com,OPS,Associate Program Manager,1,12,New York,United States,2022-02-04,active
+40,Sofia,Sen,Sofia Sen,sofia.sen@northwind-analytics.example.com,DAT,Associate Data Analyst,1,26,Kolkata,India,2025-04-03,active
+41,Kavya,Fischer,Kavya Fischer,kavya.fischer@northwind-analytics.example.com,ENG,Software Engineer,2,25,Pune,India,2020-12-12,active
+42,Jonas,Novak,Jonas Novak,jonas.novak@northwind-analytics.example.com,IT,Senior Systems Administrator,3,18,Kolkata,India,2021-10-14,active
+43,Vikram,Kim,Vikram Kim,vikram.kim@northwind-analytics.example.com,DAT,Data Engineer,2,20,Bengaluru,India,2018-06-27,active
+44,Ananya,Reddy,Ananya Reddy,ananya.reddy@northwind-analytics.example.com,DAT,Associate ML Engineer,1,26,London,United Kingdom,2024-07-01,active
+45,William,Becker,William Becker,william.becker@northwind-analytics.example.com,ENG,Senior QA Engineer,3,29,Kolkata,India,2024-08-04,active
+46,Mei,Becker,Mei Becker,mei.becker2@northwind-analytics.example.com,ENG,Senior Software Engineer,3,15,Singapore,Singapore,2018-04-28,active
+47,Pooja,Khan,Pooja Khan,pooja.khan@northwind-analytics.example.com,SAL,Senior Sales Engineer,3,17,Hyderabad,India,2017-04-22,active
+48,Debjani,Walker,Debjani Walker,debjani.walker@northwind-analytics.example.com,LEG,Legal Counsel,2,13,Munich,Germany,2015-07-23,active
+49,Tom,Nair,Tom Nair,tom.nair@northwind-analytics.example.com,FIN,Accountant,2,16,Hyderabad,India,2023-07-31,active
+50,Nikhil,Ghosh,Nikhil Ghosh,nikhil.ghosh@northwind-analytics.example.com,ENG,Senior QA Engineer,3,23,Hyderabad,India,2015-07-13,active
+51,Hannah,Ali,Hannah Ali,hannah.ali@northwind-analytics.example.com,SAL,Senior Sales Engineer,3,19,New York,United States,2022-06-05,active
+52,Chloe,Taylor,Chloe Taylor,chloe.taylor@northwind-analytics.example.com,IT,Associate IT Support Engineer,1,18,Kolkata,India,2022-01-13,active
+53,Aarav,Weber,Aarav Weber,aarav.weber@northwind-analytics.example.com,SAL,Account Executive,2,19,New York,United States,2019-06-03,active
+54,Ethan,Sen,Ethan Sen,ethan.sen@northwind-analytics.example.com,MKT,Senior Campaign Manager,3,27,Singapore,Singapore,2026-05-17,active
+55,Omar,Wilson,Omar Wilson,omar.wilson@northwind-analytics.example.com,SAL,Account Executive,2,28,Pune,India,2018-11-26,active
+56,Mei,Chen,Mei Chen,mei.chen@northwind-analytics.example.com,SAL,Senior Sales Engineer,3,19,Hyderabad,India,2022-03-24,active
+57,Felix,Khan,Felix Khan,felix.khan@northwind-analytics.example.com,DAT,ML Engineer,2,20,Bengaluru,India,2022-07-08,active
+58,Pooja,Muller,Pooja Muller,pooja.muller@northwind-analytics.example.com,DAT,Associate Data Engineer,1,20,Bengaluru,India,2016-08-19,active
+59,Tom,Sharma,Tom Sharma,tom.sharma@northwind-analytics.example.com,DAT,Associate Data Engineer,1,26,Bengaluru,India,2017-05-23,active
+60,Pooja,Gupta,Pooja Gupta,pooja.gupta@northwind-analytics.example.com,ENG,Senior DevOps Engineer,3,25,Hyderabad,India,2025-03-28,active
+61,Ethan,Fischer,Ethan Fischer,ethan.fischer@northwind-analytics.example.com,DAT,Senior Data Analyst,3,26,Seattle,United States,2024-07-27,active
+62,Pooja,Garcia,Pooja Garcia,pooja.garcia@northwind-analytics.example.com,SUP,Associate Support Engineer,1,31,Hyderabad,India,2021-03-21,active
+63,Riya,Johnson,Riya Johnson,riya.johnson@northwind-analytics.example.com,OPS,Associate Facilities Coordinator,1,12,Kolkata,India,2022-03-04,active
+64,Arjun,Walker,Arjun Walker,arjun.walker@northwind-analytics.example.com,ENG,Associate Platform Engineer,1,29,Austin,United States,2024-02-22,active
+65,Mei,Cohen,Mei Cohen,mei.cohen@northwind-analytics.example.com,SUP,Associate Support Engineer,1,31,Munich,Germany,2015-06-10,active
+66,Michael,Wagner,Michael Wagner,michael.wagner@northwind-analytics.example.com,SUP,Senior Support Engineer,3,31,Munich,Germany,2019-12-12,active
+67,Hannah,Larsen,Hannah Larsen,hannah.larsen@northwind-analytics.example.com,SUP,Associate Customer Success Manager,1,31,New York,United States,2018-09-14,active
+68,Priya,Reddy,Priya Reddy,priya.reddy@northwind-analytics.example.com,LEG,Contracts Specialist,2,22,Austin,United States,2024-08-12,active
+69,Emily,Park,Emily Park,emily.park@northwind-analytics.example.com,ENG,Associate Platform Engineer,1,21,Manchester,United Kingdom,2023-07-03,active
+70,Oliver,Ghosh,Oliver Ghosh,oliver.ghosh@northwind-analytics.example.com,ENG,Associate Software Engineer,1,14,Berlin,Germany,2016-07-16,active
+71,Pooja,Singh,Pooja Singh,pooja.singh@northwind-analytics.example.com,FIN,Senior Financial Analyst,3,16,Seattle,United States,2025-08-15,active
+72,Jun,Kim,Jun Kim,jun.kim@northwind-analytics.example.com,MKT,Marketing Analyst,2,27,Bengaluru,India,2017-07-27,active
+73,Daniel,Clarke,Daniel Clarke,daniel.clarke@northwind-analytics.example.com,MKT,Associate Marketing Analyst,1,27,Seattle,United States,2019-06-13,active
+74,Meera,Tan,Meera Tan,meera.tan@northwind-analytics.example.com,HR,Associate Compensation Analyst,1,8,Austin,United States,2015-12-03,active
+75,Anna,Nair,Anna Nair,anna.nair@northwind-analytics.example.com,DAT,Associate Data Engineer,1,26,Singapore,Singapore,2024-09-21,active
+76,Jonas,Nguyen,Jonas Nguyen,jonas.nguyen2@northwind-analytics.example.com,DAT,ML Engineer,2,26,Singapore,Singapore,2025-11-04,active
+77,Pooja,Park,Pooja Park,pooja.park@northwind-analytics.example.com,SAL,Associate Sales Engineer,1,17,Munich,Germany,2025-06-03,active
+78,Oliver,Rao,Oliver Rao,oliver.rao@northwind-analytics.example.com,SAL,Account Executive,2,19,Manchester,United Kingdom,2022-08-20,active
+79,Michael,Schmidt,Michael Schmidt,michael.schmidt@northwind-analytics.example.com,OPS,Operations Analyst,2,12,Hyderabad,India,2020-05-22,active
+80,Pooja,Sen,Pooja Sen,pooja.sen@northwind-analytics.example.com,SUP,Associate Support Specialist,1,31,Manchester,United Kingdom,2023-04-12,active
+81,Riya,Sen,Riya Sen,riya.sen@northwind-analytics.example.com,SUP,Support Engineer,2,31,Seattle,United States,2020-08-21,active
+82,Maya,Muller,Maya Muller,maya.muller@northwind-analytics.example.com,ENG,Associate Platform Engineer,1,25,Pune,India,2021-03-15,active
+83,Neha,Sharma,Neha Sharma,neha.sharma@northwind-analytics.example.com,LEG,Senior Legal Counsel,3,22,Kolkata,India,2017-11-02,active
+84,Anna,Nair,Anna Nair,anna.nair2@northwind-analytics.example.com,OPS,Facilities Coordinator,2,12,Munich,Germany,2015-04-11,active
+85,Lukas,Gupta,Lukas Gupta,lukas.gupta@northwind-analytics.example.com,SUP,Associate Support Engineer,1,24,Berlin,Germany,2016-06-19,active
+86,Neha,Reddy,Neha Reddy,neha.reddy@northwind-analytics.example.com,OPS,Operations Analyst,2,12,Singapore,Singapore,2020-07-26,active
+87,William,Sen,William Sen,william.sen@northwind-analytics.example.com,OPS,Senior Facilities Coordinator,3,12,Kolkata,India,2024-08-13,active
+88,Omar,Reddy,Omar Reddy,omar.reddy@northwind-analytics.example.com,OPS,Facilities Coordinator,2,12,Kolkata,India,2018-07-10,active
+89,Nikhil,Verma,Nikhil Verma,nikhil.verma@northwind-analytics.example.com,ENG,DevOps Engineer,2,29,Hyderabad,India,2021-05-05,active
+90,Jonas,Ghosh,Jonas Ghosh,jonas.ghosh@northwind-analytics.example.com,ENG,Associate Platform Engineer,1,21,London,United Kingdom,2018-05-05,active
+91,Grace,Cohen,Grace Cohen,grace.cohen@northwind-analytics.example.com,ENG,Associate QA Engineer,1,21,Manchester,United Kingdom,2021-10-27,active
+92,Chloe,Kim,Chloe Kim,chloe.kim@northwind-analytics.example.com,SUP,Customer Success Manager,2,24,Kolkata,India,2022-03-25,active
+93,Layla,Joshi,Layla Joshi,layla.joshi@northwind-analytics.example.com,ENG,Senior Software Engineer,3,30,Berlin,Germany,2015-11-26,active
+94,Chloe,Garcia,Chloe Garcia,chloe.garcia@northwind-analytics.example.com,SUP,Support Specialist,2,31,Munich,Germany,2026-01-11,active
+95,Emily,Walker,Emily Walker,emily.walker@northwind-analytics.example.com,SAL,Associate Account Executive,1,28,Munich,Germany,2026-02-10,active
+96,James,Gupta,James Gupta,james.gupta@northwind-analytics.example.com,HR,HR Business Partner,2,8,Kolkata,India,2024-01-25,active
+97,Sophie,Wong,Sophie Wong,sophie.wong@northwind-analytics.example.com,DAT,Data Engineer,2,26,Kolkata,India,2026-03-07,active
+98,Anna,Gupta,Anna Gupta,anna.gupta@northwind-analytics.example.com,ENG,DevOps Engineer,2,21,Berlin,Germany,2015-08-25,active
+99,Nikhil,Gupta,Nikhil Gupta,nikhil.gupta@northwind-analytics.example.com,DAT,Associate ML Engineer,1,20,London,United Kingdom,2025-05-08,active
+100,Lukas,Menon,Lukas Menon,lukas.menon@northwind-analytics.example.com,SUP,Support Engineer,2,31,Singapore,Singapore,2025-03-30,active
+101,Riya,Nguyen,Riya Nguyen,riya.nguyen@northwind-analytics.example.com,ENG,Platform Engineer,2,29,Munich,Germany,2024-04-22,active
+102,Omar,Schmidt,Omar Schmidt,omar.schmidt@northwind-analytics.example.com,HR,Associate Compensation Analyst,1,8,Austin,United States,2018-05-02,active
+103,James,Mehta,James Mehta,james.mehta@northwind-analytics.example.com,SAL,Sales Engineer,2,28,London,United Kingdom,2020-05-10,active
+104,Daniel,Wilson,Daniel Wilson,daniel.wilson@northwind-analytics.example.com,IT,Security Analyst,2,18,London,United Kingdom,2018-05-31,active
+105,William,Nair,William Nair,william.nair@northwind-analytics.example.com,ENG,Senior Software Engineer,3,21,Berlin,Germany,2025-04-01,terminated
+106,Sanjay,Johnson,Sanjay Johnson,sanjay.johnson@northwind-analytics.example.com,SUP,Support Specialist,2,24,Manchester,United Kingdom,2023-12-01,active
+107,Noah,Schmidt,Noah Schmidt,noah.schmidt@northwind-analytics.example.com,IT,Senior Systems Administrator,3,18,New York,United States,2015-10-22,active
+108,Vikram,Park,Vikram Park,vikram.park@northwind-analytics.example.com,OPS,Senior Facilities Coordinator,3,12,Pune,India,2017-04-03,active
+109,Chloe,Das,Chloe Das,chloe.das@northwind-analytics.example.com,IT,Associate Systems Administrator,1,18,Bengaluru,India,2020-06-23,active
+110,Pooja,Schmidt,Pooja Schmidt,pooja.schmidt@northwind-analytics.example.com,ENG,Associate DevOps Engineer,1,30,Seattle,United States,2018-03-18,active
+111,Layla,Wagner,Layla Wagner,layla.wagner@northwind-analytics.example.com,ENG,Associate DevOps Engineer,1,14,Munich,Germany,2018-07-18,active
+112,Neha,Mehta,Neha Mehta,neha.mehta@northwind-analytics.example.com,LEG,Associate Contracts Specialist,1,22,Kolkata,India,2023-08-18,active
+113,Karan,Banerjee,Karan Banerjee,karan.banerjee@northwind-analytics.example.com,ENG,QA Engineer,2,25,Berlin,Germany,2023-11-17,active
+114,Oliver,Ghosh,Oliver Ghosh,oliver.ghosh2@northwind-analytics.example.com,MKT,Content Strategist,2,27,Seattle,United States,2019-04-07,active
+115,Carlos,Silva,Carlos Silva,carlos.silva@northwind-analytics.example.com,FIN,Senior Payroll Specialist,3,16,Hyderabad,India,2015-11-19,active
+116,James,Kim,James Kim,james.kim@northwind-analytics.example.com,ENG,Associate Software Engineer,1,15,Berlin,Germany,2024-04-26,active
+117,Riya,Patel,Riya Patel,riya.patel@northwind-analytics.example.com,FIN,Senior Payroll Specialist,3,16,Manchester,United Kingdom,2020-10-06,active
+118,Arjun,Das,Arjun Das,arjun.das@northwind-analytics.example.com,MKT,Associate Content Strategist,1,27,Manchester,United Kingdom,2020-01-23,active
+119,Aarav,Rao,Aarav Rao,aarav.rao@northwind-analytics.example.com,MKT,Senior Content Strategist,3,27,Singapore,Singapore,2017-10-09,active
+120,Lukas,Banerjee,Lukas Banerjee,lukas.banerjee@northwind-analytics.example.com,OPS,Senior Operations Analyst,3,12,New York,United States,2022-05-11,active
+121,Michael,Gupta,Michael Gupta,michael.gupta@northwind-analytics.example.com,OPS,Facilities Coordinator,2,12,Kolkata,India,2018-02-19,terminated
+122,Rahul,Wilson,Rahul Wilson,rahul.wilson@northwind-analytics.example.com,SAL,Account Executive,2,17,Munich,Germany,2025-03-05,active
+123,Anna,Wong,Anna Wong,anna.wong@northwind-analytics.example.com,OPS,Facilities Coordinator,2,12,Pune,India,2024-02-26,active
+124,Sophie,Nair,Sophie Nair,sophie.nair@northwind-analytics.example.com,ENG,Associate DevOps Engineer,1,23,Munich,Germany,2023-03-29,active
+125,Kavya,Silva,Kavya Silva,kavya.silva@northwind-analytics.example.com,ENG,Associate DevOps Engineer,1,14,Pune,India,2015-06-24,terminated
+126,Noah,Becker,Noah Becker,noah.becker@northwind-analytics.example.com,ENG,Associate Platform Engineer,1,25,Bengaluru,India,2019-08-25,active
+127,Ishita,Singh,Ishita Singh,ishita.singh@northwind-analytics.example.com,SAL,Associate Account Executive,1,28,Kolkata,India,2020-08-15,active
+128,Pooja,Lim,Pooja Lim,pooja.lim@northwind-analytics.example.com,DAT,Associate Data Analyst,1,20,Singapore,Singapore,2022-04-06,terminated
+129,Lukas,Evans,Lukas Evans,lukas.evans@northwind-analytics.example.com,ENG,Software Engineer,2,25,New York,United States,2023-02-13,active
+130,Omar,Weber,Omar Weber,omar.weber@northwind-analytics.example.com,SUP,Associate Customer Success Manager,1,24,Singapore,Singapore,2021-10-06,active
+131,Anna,Novak,Anna Novak,anna.novak@northwind-analytics.example.com,ENG,DevOps Engineer,2,23,New York,United States,2024-12-12,active
+132,Mei,Becker,Mei Becker,mei.becker3@northwind-analytics.example.com,SAL,Associate Sales Engineer,1,17,Seattle,United States,2022-04-17,active
+133,Meera,Silva,Meera Silva,meera.silva@northwind-analytics.example.com,SUP,Support Specialist,2,31,Singapore,Singapore,2019-10-28,active
+134,James,Hughes,James Hughes,james.hughes@northwind-analytics.example.com,SUP,Senior Support Engineer,3,31,Austin,United States,2022-01-04,active
+135,Sneha,Reddy,Sneha Reddy,sneha.reddy@northwind-analytics.example.com,MKT,Content Strategist,2,27,Pune,India,2024-09-07,active
+136,Oliver,Khan,Oliver Khan,oliver.khan@northwind-analytics.example.com,HR,Compensation Analyst,2,8,Kolkata,India,2024-06-26,active
+137,Kavya,Das,Kavya Das,kavya.das@northwind-analytics.example.com,MKT,Content Strategist,2,27,New York,United States,2025-10-25,active
+138,Chloe,Becker,Chloe Becker,chloe.becker@northwind-analytics.example.com,SAL,Sales Engineer,2,17,Seattle,United States,2015-08-04,active
+139,Neha,Johnson,Neha Johnson,neha.johnson@northwind-analytics.example.com,HR,Associate Recruiter,1,8,New York,United States,2022-11-15,terminated
+140,Priya,Reddy,Priya Reddy,priya.reddy2@northwind-analytics.example.com,OPS,Facilities Coordinator,2,12,Austin,United States,2019-10-29,active
+141,Wei,Chen,Wei Chen,wei.chen@northwind-analytics.example.com,SAL,Associate Sales Engineer,1,28,Singapore,Singapore,2016-11-26,active
+142,Omar,Hughes,Omar Hughes,omar.hughes2@northwind-analytics.example.com,ENG,Software Engineer,2,29,Hyderabad,India,2025-11-22,active
+143,Karan,Ali,Karan Ali,karan.ali@northwind-analytics.example.com,ENG,Senior QA Engineer,3,14,Manchester,United Kingdom,2025-11-30,active
+144,Neha,Bose,Neha Bose,neha.bose@northwind-analytics.example.com,ENG,Associate Software Engineer,1,25,Pune,India,2018-01-29,active
+145,Daniel,Wagner,Daniel Wagner,daniel.wagner@northwind-analytics.example.com,SAL,Associate Sales Engineer,1,28,Pune,India,2020-02-29,active
+146,Arjun,Smith,Arjun Smith,arjun.smith@northwind-analytics.example.com,ENG,Senior DevOps Engineer,3,14,Hyderabad,India,2024-08-17,active
+147,Li,Wright,Li Wright,li.wright@northwind-analytics.example.com,SAL,Account Executive,2,19,Singapore,Singapore,2023-02-12,active
+148,Neha,Kim,Neha Kim,neha.kim@northwind-analytics.example.com,ENG,Software Engineer,2,25,Bengaluru,India,2022-08-13,active
+149,Oliver,Taylor,Oliver Taylor,oliver.taylor@northwind-analytics.example.com,ENG,Platform Engineer,2,25,Berlin,Germany,2018-04-24,active
+150,Ava,Garcia,Ava Garcia,ava.garcia@northwind-analytics.example.com,ENG,Associate Software Engineer,1,15,Hyderabad,India,2026-01-30,active
+151,William,Iyer,William Iyer,william.iyer@northwind-analytics.example.com,DAT,Senior ML Engineer,3,26,Pune,India,2025-07-08,active
+152,Grace,Evans,Grace Evans,grace.evans@northwind-analytics.example.com,HR,Compensation Analyst,2,8,Pune,India,2015-11-05,terminated
+153,Felix,Wilson,Felix Wilson,felix.wilson@northwind-analytics.example.com,ENG,Senior Software Engineer,3,30,Seattle,United States,2025-05-18,active
+154,Felix,Das,Felix Das,felix.das@northwind-analytics.example.com,IT,Systems Administrator,2,18,Austin,United States,2016-05-21,active
+155,William,Evans,William Evans,william.evans@northwind-analytics.example.com,LEG,Associate Legal Counsel,1,13,Pune,India,2026-09-22,active
+156,Ananya,Garcia,Ananya Garcia,ananya.garcia@northwind-analytics.example.com,SAL,Associate Sales Engineer,1,19,New York,United States,2022-07-04,active
+157,Jun,Das,Jun Das,jun.das@northwind-analytics.example.com,OPS,Associate Facilities Coordinator,1,12,Berlin,Germany,2022-06-23,active
+158,Sneha,Sen,Sneha Sen,sneha.sen@northwind-analytics.example.com,MKT,Associate Content Strategist,1,27,Austin,United States,2023-06-13,active
+159,Felix,Brown,Felix Brown,felix.brown@northwind-analytics.example.com,HR,Compensation Analyst,2,8,New York,United States,2015-05-30,active
+160,Rahul,Das,Rahul Das,rahul.das@northwind-analytics.example.com,MKT,Associate Content Strategist,1,27,Kolkata,India,2016-09-24,active
+161,Ava,Wong,Ava Wong,ava.wong@northwind-analytics.example.com,SUP,Customer Success Manager,2,24,Bengaluru,India,2017-12-09,active
+162,Rohan,Walker,Rohan Walker,rohan.walker@northwind-analytics.example.com,ENG,Senior Platform Engineer,3,30,New York,United States,2023-03-04,active
+163,Neha,Muller,Neha Muller,neha.muller@northwind-analytics.example.com,LEG,Legal Counsel,2,22,Manchester,United Kingdom,2019-05-09,active
+164,Sourav,Mehta,Sourav Mehta,sourav.mehta@northwind-analytics.example.com,SUP,Associate Customer Success Manager,1,31,London,United Kingdom,2018-02-07,active
+165,Meera,Verma,Meera Verma,meera.verma@northwind-analytics.example.com,OPS,Senior Facilities Coordinator,3,12,Singapore,Singapore,2016-11-18,active
+166,Nikhil,Evans,Nikhil Evans,nikhil.evans@northwind-analytics.example.com,SUP,Support Specialist,2,31,Munich,Germany,2022-11-03,active
+167,Sophie,Ghosh,Sophie Ghosh,sophie.ghosh@northwind-analytics.example.com,ENG,DevOps Engineer,2,15,Berlin,Germany,2015-08-19,active
+168,Lukas,Cohen,Lukas Cohen,lukas.cohen@northwind-analytics.example.com,HR,HR Business Partner,2,8,Hyderabad,India,2018-02-10,active
+169,Ishita,Becker,Ishita Becker,ishita.becker@northwind-analytics.example.com,SUP,Associate Support Specialist,1,24,Pune,India,2024-06-29,active
+170,Li,Wright,Li Wright,li.wright2@northwind-analytics.example.com,ENG,Associate DevOps Engineer,1,15,Austin,United States,2016-05-29,active
+171,Chloe,Sharma,Chloe Sharma,chloe.sharma@northwind-analytics.example.com,OPS,Associate Facilities Coordinator,1,12,Hyderabad,India,2022-11-30,active
+172,Marta,Wagner,Marta Wagner,marta.wagner@northwind-analytics.example.com,ENG,QA Engineer,2,25,Kolkata,India,2026-05-19,active
+173,Sanjay,Kim,Sanjay Kim,sanjay.kim@northwind-analytics.example.com,SAL,Sales Engineer,2,28,Berlin,Germany,2015-05-14,active
+174,Maya,Park,Maya Park,maya.park@northwind-analytics.example.com,SAL,Account Executive,2,28,Singapore,Singapore,2022-06-16,active
+175,Tom,Muller,Tom Muller,tom.muller@northwind-analytics.example.com,SUP,Senior Customer Success Manager,3,24,London,United Kingdom,2019-02-02,active
+176,Amit,Chatterjee,Amit Chatterjee,amit.chatterjee@northwind-analytics.example.com,DAT,Senior Data Analyst,3,20,Hyderabad,India,2022-01-29,active
+177,Amit,Verma,Amit Verma,amit.verma@northwind-analytics.example.com,LEG,Legal Counsel,2,22,Singapore,Singapore,2023-01-03,active
+178,Hannah,Kim,Hannah Kim,hannah.kim@northwind-analytics.example.com,IT,Associate Systems Administrator,1,18,Manchester,United Kingdom,2024-11-11,active
+179,Marta,Joshi,Marta Joshi,marta.joshi@northwind-analytics.example.com,SAL,Associate Sales Engineer,1,28,Kolkata,India,2016-11-07,active
+180,Vikram,Reddy,Vikram Reddy,vikram.reddy@northwind-analytics.example.com,SUP,Senior Customer Success Manager,3,24,Pune,India,2022-05-10,active
+181,William,Chatterjee,William Chatterjee,william.chatterjee@northwind-analytics.example.com,SUP,Customer Success Manager,2,24,Manchester,United Kingdom,2022-11-28,active
+182,Hannah,Brown,Hannah Brown,hannah.brown@northwind-analytics.example.com,ENG,Senior Software Engineer,3,14,Seattle,United States,2026-07-05,active
+183,Arjun,Menon,Arjun Menon,arjun.menon@northwind-analytics.example.com,ENG,Associate DevOps Engineer,1,30,Kolkata,India,2023-03-20,active
+184,Arjun,Tan,Arjun Tan,arjun.tan@northwind-analytics.example.com,OPS,Program Manager,2,12,Manchester,United Kingdom,2018-02-01,active
+185,Anna,Weber,Anna Weber,anna.weber@northwind-analytics.example.com,SAL,Associate Account Executive,1,17,New York,United States,2023-09-06,active
+186,Karan,Cohen,Karan Cohen,karan.cohen@northwind-analytics.example.com,ENG,Associate Platform Engineer,1,23,Berlin,Germany,2026-01-06,active
+187,James,Khan,James Khan,james.khan@northwind-analytics.example.com,IT,IT Support Engineer,2,18,Singapore,Singapore,2022-10-17,active
+188,Meera,Mehta,Meera Mehta,meera.mehta@northwind-analytics.example.com,IT,Senior Systems Administrator,3,18,Manchester,United Kingdom,2018-02-11,active
+189,Lena,Singh,Lena Singh,lena.singh@northwind-analytics.example.com,ENG,DevOps Engineer,2,21,Singapore,Singapore,2016-12-07,active
+190,Arjun,Singh,Arjun Singh,arjun.singh@northwind-analytics.example.com,LEG,Compliance Analyst,2,22,Singapore,Singapore,2022-02-10,active
+191,Debjani,Nguyen,Debjani Nguyen,debjani.nguyen@northwind-analytics.example.com,SUP,Customer Success Manager,2,24,New York,United States,2017-11-23,active
+192,Zara,Ghosh,Zara Ghosh,zara.ghosh@northwind-analytics.example.com,HR,HR Business Partner,2,8,Pune,India,2022-10-05,active
+193,Li,Wagner,Li Wagner,li.wagner@northwind-analytics.example.com,HR,Associate HR Business Partner,1,8,New York,United States,2017-02-04,active
+194,Jun,Johnson,Jun Johnson,jun.johnson@northwind-analytics.example.com,OPS,Facilities Coordinator,2,12,New York,United States,2015-12-04,active
+195,Ava,Tan,Ava Tan,ava.tan@northwind-analytics.example.com,ENG,Senior QA Engineer,3,30,New York,United States,2024-05-05,active
+196,Lukas,Menon,Lukas Menon,lukas.menon2@northwind-analytics.example.com,SUP,Customer Success Manager,2,31,Berlin,Germany,2024-02-09,active
+197,Emily,Chen,Emily Chen,emily.chen@northwind-analytics.example.com,DAT,Associate Data Analyst,1,26,Manchester,United Kingdom,2018-03-22,active
+198,Felix,Becker,Felix Becker,felix.becker@northwind-analytics.example.com,DAT,Senior Data Engineer,3,26,Singapore,Singapore,2017-05-19,active
+199,Daniel,Wong,Daniel Wong,daniel.wong@northwind-analytics.example.com,ENG,Software Engineer,2,15,Bengaluru,India,2024-05-18,active
+200,Anna,Fischer,Anna Fischer,anna.fischer@northwind-analytics.example.com,HR,Senior HR Business Partner,3,8,Singapore,Singapore,2025-06-21,active

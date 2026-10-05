@@ -1,0 +1,151 @@
+query_id,question,expected_answer,source_doc_id,doc_type,difficulty,region,hard_negative_doc_ids
+Q-00001,What is the approved budget for Project Xenon?,"USD 4,805,000",DOC-000166,project_brief,easy,,DOC-000178;DOC-000173;DOC-000175;DOC-000167;DOC-000168
+Q-00002,Quick question - who is the executive sponsor of Project Dynamo?,Sneha Bose,DOC-000176,project_brief,medium,,DOC-000158;DOC-000185;DOC-000162;DOC-000179;DOC-000165
+Q-00003,How often must passwords be changed in Singapore?,every 180 days,DOC-000028,policy,easy,Singapore,DOC-000063;DOC-000064;DOC-000003;DOC-000065
+Q-00004,What is the target launch date for Project Atlas?,31 August 2025,DOC-000177,project_brief,easy,,DOC-000185;DOC-000184;DOC-000157;DOC-000171;DOC-000159
+Q-00005,Can you tell me: After how many failed sign-in attempts is an account locked in India?,3 attempts,DOC-000064,policy,medium,India,DOC-000065;DOC-000003;DOC-000028;DOC-000063
+Q-00006,What command is used to restart reporting-service?,kubectl rollout restart deployment/reporting-service,DOC-000155,runbook,easy,,DOC-000124;DOC-000156;DOC-000114;DOC-000123;DOC-000137
+Q-00007,How much additional budget was approved for Project Aurora in the steering sync on 16 December 2024?,"USD 100,000",DOC-000205,meeting_notes,easy,,
+Q-00008,Who owns the ingestion-gateway service?,Pooja Gupta,DOC-000092,service_wiki,easy,,DOC-000111;DOC-000103;DOC-000104;DOC-000101;DOC-000109
+Q-00009,Quick question - who is responsible for the user training deck for Project Cascade according to the steering sync on 9 March 2026?,Lukas Bose,DOC-000236,meeting_notes,medium,,
+Q-00010,What new launch date was agreed for Project Nebula in the steering sync on 1 July 2025?,23 October 2025,DOC-000286,meeting_notes,easy,,
+Q-00011,Quick question - after how many minutes should the 'Disk usage high' alert for reporting-service be escalated?,15 minutes,DOC-000143,runbook,medium,,DOC-000120;DOC-000153;DOC-000134;DOC-000150;DOC-000117
+Q-00012,How much additional budget was approved for Project Kestrel in the steering sync on 24 March 2026?,"USD 75,000",DOC-000213,meeting_notes,easy,,
+Q-00013,Who is the owner of Project Kestrel?,Sourav Ali,DOC-000161,project_brief,easy,,DOC-000173;DOC-000181;DOC-000165;DOC-000180;DOC-000162
+Q-00014,Which database does reporting-gateway use?,MongoDB,DOC-000093,service_wiki,easy,,DOC-000102;DOC-000100;DOC-000094;DOC-000110;DOC-000106
+Q-00015,Quick question - which programming language is analytics-engine written in?,Node.js,DOC-000096,service_wiki,medium,,DOC-000098;DOC-000108;DOC-000101;DOC-000105;DOC-000106
+Q-00016,What is the availability SLO for payments-api?,99.9 percent,DOC-000103,service_wiki,easy,,DOC-000101;DOC-000093;DOC-000099;DOC-000108;DOC-000102
+Q-00017,How much additional budget was approved for Project Ember in the steering sync on 1 May 2026?,"USD 25,000",DOC-000260,meeting_notes,easy,,
+Q-00018,"Hi, how many years are contracts retained in India?",10 years,DOC-000032,policy,medium,India,DOC-000057;DOC-000090;DOC-000012;DOC-000037
+Q-00019,How much notice is required for leave longer than three days in India?,7 working days,DOC-000020,policy,easy,India,DOC-000029;DOC-000077;DOC-000044;DOC-000043;DOC-000030
+Q-00020,I need to know. Who is the executive sponsor of Project Cascade?,Zara Silva,DOC-000163,project_brief,medium,,DOC-000176;DOC-000178;DOC-000158;DOC-000174;DOC-000168
+Q-00021,I need to know. How many quotes are required for larger purchases in India?,2,DOC-000066,policy,medium,India,DOC-000011;DOC-000069;DOC-000078;DOC-000062;DOC-000079
+Q-00022,How much additional budget was approved for Project Yonder in the steering sync on 29 June 2024?,"USD 25,000",DOC-000250,meeting_notes,easy,,
+Q-00023,What is the approved budget for Project Aurora?,"USD 1,520,000",DOC-000164,project_brief,easy,,DOC-000162;DOC-000160;DOC-000158;DOC-000177;DOC-000173
+Q-00024,What is the target launch date for Project Lantern?,2 March 2027,DOC-000172,project_brief,easy,,DOC-000180;DOC-000159;DOC-000173;DOC-000160;DOC-000165
+Q-00025,Can you tell me: For how many weeks does an onboarding buddy support a new joiner in United States?,4 weeks,DOC-000071,policy,medium,United States,DOC-000039;DOC-000045;DOC-000084;DOC-000085;DOC-000088
+Q-00026,After how many minutes should the 'Certificate expiring' alert for analytics-engine be escalated?,10 minutes,DOC-000135,runbook,easy,,DOC-000123;DOC-000155;DOC-000124;DOC-000116;DOC-000137
+Q-00027,Who is the executive sponsor of Project Ibis?,Sneha Bose,DOC-000173,project_brief,easy,,DOC-000177;DOC-000169;DOC-000157;DOC-000171;DOC-000161
+Q-00028,What command is used to restart search-sync?,kubectl rollout restart deployment/search-sync,DOC-000130,runbook,easy,,DOC-000152;DOC-000136;DOC-000133;DOC-000127;DOC-000147
+Q-00029,What is the availability SLO for reporting-service?,99.99 percent,DOC-000108,service_wiki,easy,,DOC-000105;DOC-000109;DOC-000098;DOC-000096;DOC-000097
+Q-00030,Quick question - what email address should I use for HR questions in India?,hr-india@northwind-analytics.example.com,DOC-000070,faq,medium,India,DOC-000048;DOC-000040;DOC-000015;DOC-000016;DOC-000042
+Q-00031,I need to know. How much additional budget was approved for Project Dynamo in the steering sync on 21 April 2023?,"USD 150,000",DOC-000253,meeting_notes,medium,,
+Q-00032,Which VPN client do employees in Singapore use?,SecureLink,DOC-000050,faq,easy,Singapore,DOC-000036;DOC-000049;DOC-000033;DOC-000056;DOC-000031
+Q-00033,After how many minutes should the 'Certificate expiring' alert for payments-api be escalated? Please be specific.,10 minutes,DOC-000124,runbook,medium,,DOC-000116;DOC-000155;DOC-000114;DOC-000135;DOC-000137
+Q-00034,What is the approved budget for Project Yonder?,"USD 2,150,000",DOC-000162,project_brief,easy,,DOC-000168;DOC-000161;DOC-000166;DOC-000184;DOC-000178
+Q-00035,Quick question - which database does shipping-service use?,MySQL,DOC-000109,service_wiki,medium,,DOC-000099;DOC-000107;DOC-000104;DOC-000100;DOC-000094
+Q-00036,"Hi, how many days per week can employees in United States work remotely?",1 days,DOC-000027,policy,medium,United States,DOC-000024;DOC-000034;DOC-000025;DOC-000005;DOC-000004
+Q-00037,How many days in advance must travel be booked in United States?,21 days,DOC-000058,policy,easy,United States,DOC-000086;DOC-000054;DOC-000007;DOC-000087;DOC-000006
+Q-00038,Within how many days must expense claims be submitted in Germany? Please be specific.,30 days,DOC-000061,policy,medium,Germany,DOC-000001;DOC-000041;DOC-000067;DOC-000060;DOC-000038
+Q-00039,I need to know. What new launch date was agreed for Project Comet in the steering sync on 31 May 2023?,25 February 2024,DOC-000247,meeting_notes,medium,,
+Q-00040,"Hi, how much additional budget was approved for Project Kestrel in the steering sync on 12 March 2026?","USD 100,000",DOC-000256,meeting_notes,medium,,
+Q-00041,I need to know. What is the approved budget for Project Tundra?,"USD 1,740,000",DOC-000183,project_brief,medium,,DOC-000178;DOC-000185;DOC-000177;DOC-000171;DOC-000158
+Q-00042,How much notice is required for leave longer than three days in Singapore?,14 working days,DOC-000089,policy,easy,Singapore,DOC-000044;DOC-000077;DOC-000020;DOC-000030;DOC-000029
+Q-00043,Which Slack channel is used for incidents on shipping-service?,#oncall-shipping-service,DOC-000127,runbook,easy,,DOC-000144;DOC-000133;DOC-000147;DOC-000136;DOC-000132
+Q-00044,How much additional budget was approved for Project Vertex in the steering sync on 26 September 2026? Please be specific.,"USD 150,000",DOC-000251,meeting_notes,medium,,
+Q-00045,I need to know. Within how many working days do new joiners in United Kingdom receive a laptop?,1 working days,DOC-000085,policy,medium,United Kingdom,DOC-000039;DOC-000071;DOC-000045;DOC-000088;DOC-000084
+Q-00046,"Hi, which Slack channel is used for incidents on ledger-service?",#oncall-ledger-service,DOC-000134,runbook,medium,,DOC-000143;DOC-000153;DOC-000117;DOC-000140;DOC-000128
+Q-00047,Which Slack channel is used for incidents on auth-api?,#oncall-auth-api,DOC-000114,runbook,easy,,DOC-000116;DOC-000135;DOC-000123;DOC-000156;DOC-000124
+Q-00048,"Hi, who is responsible for the security review for Project Horizon according to the steering sync on 10 June 2026?",James Gupta,DOC-000290,meeting_notes,medium,,
+Q-00049,Who owns the profile-engine service? Please be specific.,Arjun Park,DOC-000101,service_wiki,medium,,DOC-000103;DOC-000109;DOC-000107;DOC-000097;DOC-000095
+Q-00050,What command is used to restart inventory-engine?,kubectl rollout restart deployment/inventory-engine,DOC-000133,runbook,easy,,DOC-000127;DOC-000152;DOC-000132;DOC-000144;DOC-000130
+Q-00051,What command is used to restart ingestion-gateway? Please be specific.,kubectl rollout restart deployment/ingestion-gateway,DOC-000131,runbook,medium,,DOC-000129;DOC-000126;DOC-000138;DOC-000118;DOC-000122
+Q-00052,"Hi, which programming language is ledger-sync written in?",Node.js,DOC-000100,service_wiki,medium,,DOC-000111;DOC-000095;DOC-000097;DOC-000108;DOC-000105
+Q-00053,"Hi, what command is used to restart reporting-service?",kubectl rollout restart deployment/reporting-service,DOC-000113,runbook,medium,,DOC-000146;DOC-000151;DOC-000118;DOC-000131;DOC-000115
+Q-00054,I need to know. What new launch date was agreed for Project Beacon in the steering sync on 11 July 2026?,17 November 2027,DOC-000191,meeting_notes,medium,,
+Q-00055,Quick question - what is the minimum password length under the security standard in Germany?,12 characters,DOC-000065,policy,medium,Germany,DOC-000064;DOC-000063;DOC-000003;DOC-000028
+Q-00056,I need to know. What is the target launch date for Project Aurora?,26 December 2025,DOC-000164,project_brief,medium,,DOC-000160;DOC-000174;DOC-000168;DOC-000169;DOC-000176
+Q-00057,What new launch date was agreed for Project Eclipse in the steering sync on 25 March 2026?,12 January 2027,DOC-000232,meeting_notes,easy,,
+Q-00058,After how many minutes should the 'High error rate' alert for search-sync be escalated? Please be specific.,5 minutes,DOC-000130,runbook,medium,,DOC-000144;DOC-000147;DOC-000127;DOC-000133;DOC-000136
+Q-00059,After how many minutes should the 'Elevated latency' alert for ingestion-sync be escalated?,10 minutes,DOC-000141,runbook,easy,,DOC-000112;DOC-000139;DOC-000125;DOC-000148;DOC-000149
+Q-00060,What new launch date was agreed for Project Ember in the steering sync on 7 July 2026?,1 April 2027,DOC-000297,meeting_notes,easy,,
+Q-00061,Can you tell me: Which database does inventory-engine use?,Cassandra,DOC-000095,service_wiki,medium,,DOC-000098;DOC-000106;DOC-000109;DOC-000111;DOC-000094
+Q-00062,"Hi, what is the availability SLO for analytics-engine?",99.99 percent,DOC-000096,service_wiki,medium,,DOC-000097;DOC-000107;DOC-000099;DOC-000101;DOC-000111
+Q-00063,Above what value are competitive quotes required in India? Please be specific.,"INR 80,000",DOC-000066,policy,medium,India,DOC-000079;DOC-000062;DOC-000078;DOC-000011;DOC-000069
+Q-00064,What new launch date was agreed for Project Summit in the steering sync on 7 July 2023? Please be specific.,12 October 2023,DOC-000237,meeting_notes,medium,,
+Q-00065,What command is used to restart analytics-engine? Please be specific.,kubectl rollout restart deployment/analytics-engine,DOC-000135,runbook,medium,,DOC-000114;DOC-000156;DOC-000123;DOC-000116;DOC-000137
+Q-00066,Quick question - who is responsible for the security review for Project Ember according to the steering sync on 1 June 2026?,Ananya Mukherjee,DOC-000296,meeting_notes,medium,,
+Q-00067,Who is the owner of Project Summit? Please be specific.,Lukas Banerjee,DOC-000167,project_brief,medium,,DOC-000180;DOC-000170;DOC-000157;DOC-000182;DOC-000178
+Q-00068,What is the approved budget for Project Atlas?,"USD 3,920,000",DOC-000177,project_brief,easy,,DOC-000164;DOC-000180;DOC-000157;DOC-000165;DOC-000158
+Q-00069,Quick question - how much additional budget was approved for Project Eclipse in the steering sync on 22 April 2026?,"USD 150,000",DOC-000284,meeting_notes,medium,,
+Q-00070,How many public holidays do employees in India get?,9,DOC-000070,faq,easy,India,DOC-000015;DOC-000016;DOC-000048;DOC-000042;DOC-000040
+Q-00071,After how many failed sign-in attempts is an account locked in United Kingdom? Please be specific.,5 attempts,DOC-000063,policy,medium,United Kingdom,DOC-000064;DOC-000003;DOC-000028;DOC-000065
+Q-00072,Who is responsible for the security review for Project Lantern according to the steering sync on 28 September 2026?,Tom Muller,DOC-000243,meeting_notes,easy,,
+Q-00073,Who is responsible for the cost forecast for Project Summit according to the steering sync on 13 June 2023?,Omar Wilson,DOC-000262,meeting_notes,easy,,
+Q-00074,After how many minutes should the 'Disk usage high' alert for payments-api be escalated?,5 minutes,DOC-000150,runbook,easy,,DOC-000117;DOC-000143;DOC-000128;DOC-000120;DOC-000154
+Q-00075,What is the target launch date for Project Comet?,21 January 2024,DOC-000179,project_brief,easy,,DOC-000185;DOC-000162;DOC-000186;DOC-000171;DOC-000158
+Q-00076,What new launch date was agreed for Project Cascade in the steering sync on 19 July 2026?,14 December 2026,DOC-000277,meeting_notes,easy,,
+Q-00077,Quick question - how much additional budget was approved for Project Glacier in the steering sync on 27 July 2025?,"USD 25,000",DOC-000293,meeting_notes,medium,,
+Q-00078,I need to know. What new launch date was agreed for Project Umbra in the steering sync on 29 February 2024?,24 August 2024,DOC-000239,meeting_notes,medium,,
+Q-00079,Who is responsible for the security review for Project Orion according to the steering sync on 9 May 2026?,Lukas Gupta,DOC-000227,meeting_notes,easy,,
+Q-00080,Can you tell me: Who is the executive sponsor of Project Indigo?,Zara Silva,DOC-000159,project_brief,medium,,DOC-000180;DOC-000161;DOC-000168;DOC-000183;DOC-000169
+Q-00081,Who is responsible for the security review for Project Rift according to the steering sync on 8 November 2024?,Nikhil Evans,DOC-000194,meeting_notes,easy,,
+Q-00082,Quick question - how many paid sick days do employees in United Kingdom receive?,10 days,DOC-000030,policy,medium,United Kingdom,DOC-000043;DOC-000020;DOC-000044;DOC-000077;DOC-000089
+Q-00083,Quick question - what new launch date was agreed for Project Vertex in the steering sync on 13 August 2026?,1 November 2027,DOC-000222,meeting_notes,medium,,
+Q-00084,How much additional budget was approved for Project Jade in the steering sync on 13 October 2023?,"USD 50,000",DOC-000291,meeting_notes,easy,,
+Q-00085,Which Slack channel is used for incidents on inventory-engine?,#oncall-inventory-engine,DOC-000133,runbook,easy,,DOC-000130;DOC-000147;DOC-000127;DOC-000136;DOC-000132
+Q-00086,Above what amount are receipts required in Singapore?,SGD 20,DOC-000067,policy,easy,Singapore,DOC-000041;DOC-000038;DOC-000061;DOC-000001;DOC-000060
+Q-00087,Who is responsible for the API specification for Project Glacier according to the steering sync on 14 July 2025? Please be specific.,Nikhil Iyer,DOC-000294,meeting_notes,medium,,
+Q-00088,Who is responsible for the rollout checklist for Project Jade according to the steering sync on 9 September 2023?,Arjun Park,DOC-000234,meeting_notes,easy,,
+Q-00089,Who is responsible for the API specification for Project Orion according to the steering sync on 27 February 2026?,James Clarke,DOC-000283,meeting_notes,easy,,
+Q-00090,Which programming language is shipping-service written in?,Kotlin,DOC-000109,service_wiki,easy,,DOC-000103;DOC-000096;DOC-000105;DOC-000095;DOC-000097
+Q-00091,What is the nightly hotel limit for employees in United Kingdom?,GBP 100,DOC-000001,policy,easy,United Kingdom,DOC-000061;DOC-000038;DOC-000060;DOC-000041;DOC-000067
+Q-00092,Can you tell me: What is the IT helpdesk extension in Germany?,2970,DOC-000031,faq,medium,Germany,DOC-000049;DOC-000036;DOC-000056;DOC-000050;DOC-000033
+Q-00093,"Hi, how soon must a post-mortem be published after a Severity 1 incident in Singapore?",3 working days,DOC-000010,policy,medium,Singapore,DOC-000051;DOC-000047;DOC-000046;DOC-000009;DOC-000068
+Q-00094,I need to know. How much additional budget was approved for Project Juniper in the steering sync on 29 May 2023?,"USD 75,000",DOC-000264,meeting_notes,medium,,
+Q-00095,"Hi, above what value are competitive quotes required in United Kingdom?","GBP 10,000",DOC-000011,policy,medium,United Kingdom,DOC-000066;DOC-000078;DOC-000062;DOC-000079;DOC-000069
+Q-00096,Which Slack channel is used for incidents on profile-engine?,#oncall-profile-engine,DOC-000153,runbook,easy,,DOC-000143;DOC-000117;DOC-000128;DOC-000150;DOC-000134
+Q-00097,"Hi, who is responsible for the cost forecast for Project Quartz according to the steering sync on 6 May 2024?",Ananya Reddy,DOC-000280,meeting_notes,medium,,
+Q-00098,How much additional budget was approved for Project Juniper in the steering sync on 28 May 2023?,"USD 50,000",DOC-000214,meeting_notes,easy,,
+Q-00099,What new launch date was agreed for Project Keystone in the steering sync on 15 June 2026?,23 November 2026,DOC-000300,meeting_notes,easy,,
+Q-00100,I need to know. Who is responsible for the load test report for Project Keystone according to the steering sync on 17 September 2026?,Mei Becker,DOC-000233,meeting_notes,medium,,
+Q-00101,What is the approved budget for Project Eclipse?,"USD 1,995,000",DOC-000186,project_brief,easy,,DOC-000165;DOC-000170;DOC-000181;DOC-000159;DOC-000169
+Q-00102,What new launch date was agreed for Project Dynamo in the steering sync on 15 June 2023?,19 January 2024,DOC-000295,meeting_notes,easy,,
+Q-00103,Who is responsible for the security review for Project Vertex according to the steering sync on 19 September 2026? Please be specific.,Ethan Fischer,DOC-000246,meeting_notes,medium,,
+Q-00104,I need to know. How often must passwords be changed in India?,every 90 days,DOC-000064,policy,medium,India,DOC-000065;DOC-000003;DOC-000063;DOC-000028
+Q-00105,Which database does auth-engine use?,DynamoDB,DOC-000111,service_wiki,easy,,DOC-000109;DOC-000110;DOC-000100;DOC-000093;DOC-000104
+Q-00106,"Hi, how many days per week can employees in Germany work remotely?",2 days,DOC-000005,policy,medium,Germany,DOC-000026;DOC-000023;DOC-000025;DOC-000024;DOC-000004
+Q-00107,What is the travel per diem in Singapore? Please be specific.,SGD 60,DOC-000055,policy,medium,Singapore,DOC-000086;DOC-000006;DOC-000058;DOC-000007;DOC-000087
+Q-00108,"Hi, after how many minutes should the 'Queue backlog' alert for auth-engine be escalated?",30 minutes,DOC-000146,runbook,medium,,DOC-000151;DOC-000138;DOC-000113;DOC-000115;DOC-000118
+Q-00109,Who owns the ledger-gateway service?,Ava Tan,DOC-000107,service_wiki,easy,,DOC-000092;DOC-000102;DOC-000093;DOC-000095;DOC-000103
+Q-00110,Can you tell me: What command is used to restart ingestion-gateway?,kubectl rollout restart deployment/ingestion-gateway,DOC-000123,runbook,medium,,DOC-000124;DOC-000155;DOC-000137;DOC-000135;DOC-000156
+Q-00111,Quick question - which Slack channel is used for incidents on auth-api?,#oncall-auth-api,DOC-000112,runbook,medium,,DOC-000119;DOC-000141;DOC-000148;DOC-000139;DOC-000125
+Q-00112,What is the monthly home-office stipend in Singapore?,SGD 40,DOC-000024,policy,easy,Singapore,DOC-000023;DOC-000027;DOC-000004;DOC-000005;DOC-000035
+Q-00113,Which Slack channel is used for incidents on ingestion-gateway? Please be specific.,#oncall-ingestion-gateway,DOC-000131,runbook,medium,,DOC-000142;DOC-000115;DOC-000118;DOC-000126;DOC-000122
+Q-00114,Quick question - who is responsible for the vendor contract for Project Meridian according to the steering sync on 30 June 2024?,William Sen,DOC-000203,meeting_notes,medium,,
+Q-00115,Within how many days must expense claims be submitted in Singapore?,15 days,DOC-000067,policy,easy,Singapore,DOC-000041;DOC-000061;DOC-000060;DOC-000038;DOC-000001
+Q-00116,How much notice is required for leave longer than three days in United States? Please be specific.,5 working days,DOC-000044,policy,medium,United States,DOC-000020;DOC-000077;DOC-000029;DOC-000089;DOC-000030
+Q-00117,How long are financial records kept in Germany?,10 years,DOC-000057,policy,easy,Germany,DOC-000037;DOC-000090;DOC-000032;DOC-000012
+Q-00118,How many days of paid time off do employees in Singapore get each year?,28 days,DOC-000089,policy,easy,Singapore,DOC-000077;DOC-000030;DOC-000043;DOC-000044;DOC-000020
+Q-00119,Above what contract value is legal review needed in United Kingdom? Please be specific.,"GBP 100,000",DOC-000011,policy,medium,United Kingdom,DOC-000069;DOC-000078;DOC-000079;DOC-000062;DOC-000066
+Q-00120,How much additional budget was approved for Project Meridian in the steering sync on 4 September 2024?,"USD 100,000",DOC-000211,meeting_notes,easy,,
+Q-00121,What command is used to restart reporting-service?,kubectl rollout restart deployment/reporting-service,DOC-000144,runbook,easy,,DOC-000132;DOC-000152;DOC-000127;DOC-000133;DOC-000136
+Q-00122,"Hi, what is the availability SLO for orders-hub?",99.5 percent,DOC-000099,service_wiki,medium,,DOC-000103;DOC-000098;DOC-000096;DOC-000109;DOC-000106
+Q-00123,What is the target launch date for Project Summit?,13 September 2023,DOC-000167,project_brief,easy,,DOC-000165;DOC-000160;DOC-000162;DOC-000171;DOC-000186
+Q-00124,Who owns the reporting-service service?,Pooja Gupta,DOC-000108,service_wiki,easy,,DOC-000102;DOC-000110;DOC-000104;DOC-000095;DOC-000100
+Q-00125,I need to know. How many days per week can employees in United Kingdom work remotely?,1 days,DOC-000035,policy,medium,United Kingdom,DOC-000024;DOC-000025;DOC-000005;DOC-000023;DOC-000004
+Q-00126,I need to know. How much additional budget was approved for Project Summit in the steering sync on 22 July 2023?,"USD 50,000",DOC-000254,meeting_notes,medium,,
+Q-00127,"Hi, after how many minutes should the 'Queue backlog' alert for ledger-service be escalated?",30 minutes,DOC-000121,runbook,medium,,DOC-000131;DOC-000146;DOC-000151;DOC-000129;DOC-000122
+Q-00128,Quick question - which Slack channel is used for incidents on search-sync?,#oncall-search-sync,DOC-000130,runbook,medium,,DOC-000136;DOC-000152;DOC-000132;DOC-000144;DOC-000127
+Q-00129,How many days in advance must travel be booked in Germany?,7 days,DOC-000007,policy,easy,Germany,DOC-000054;DOC-000006;DOC-000091;DOC-000058;DOC-000086
+Q-00130,Which Slack channel is used for incidents on profile-engine?,#oncall-profile-engine,DOC-000145,runbook,easy,,DOC-000141;DOC-000148;DOC-000149;DOC-000125;DOC-000119
+Q-00131,On which day of the month are payslips released in Germany? Please be specific.,day 30,DOC-000048,faq,medium,Germany,DOC-000070;DOC-000015;DOC-000042;DOC-000040;DOC-000016
+Q-00132,Which VPN client do employees in United Kingdom use?,SecureLink,DOC-000036,faq,easy,United Kingdom,DOC-000050;DOC-000056;DOC-000031;DOC-000049;DOC-000033
+Q-00133,After how many minutes should the 'High error rate' alert for ingestion-engine be escalated?,5 minutes,DOC-000136,runbook,easy,,DOC-000132;DOC-000127;DOC-000130;DOC-000133;DOC-000152
+Q-00134,I need to know. What new launch date was agreed for Project Comet in the steering sync on 26 April 2023?,15 April 2024,DOC-000187,meeting_notes,medium,,
+Q-00135,I need to know. What is the approved budget for Project Meridian?,"USD 4,775,000",DOC-000171,project_brief,medium,,DOC-000177;DOC-000159;DOC-000157;DOC-000181;DOC-000163
+Q-00136,How long are financial records kept in United Kingdom?,8 years,DOC-000037,policy,easy,United Kingdom,DOC-000032;DOC-000057;DOC-000012;DOC-000090
+Q-00137,What new launch date was agreed for Project Indigo in the steering sync on 30 January 2026? Please be specific.,17 June 2026,DOC-000299,meeting_notes,medium,,
+Q-00138,I need to know. What is the target launch date for Project Yonder?,3 September 2024,DOC-000162,project_brief,medium,,DOC-000178;DOC-000161;DOC-000182;DOC-000158;DOC-000180
+Q-00139,Can you tell me: Which Slack channel is used for incidents on ingestion-engine?,#oncall-ingestion-engine,DOC-000136,runbook,medium,,DOC-000132;DOC-000127;DOC-000144;DOC-000130;DOC-000152
+Q-00140,Who is responsible for the security review for Project Kestrel according to the steering sync on 29 September 2026?,Aarav Weber,DOC-000235,meeting_notes,easy,,
+Q-00141,Who is responsible for the API specification for Project Kestrel according to the steering sync on 12 March 2026?,Zara Ghosh,DOC-000256,meeting_notes,easy,,
+Q-00142,"Hi, what is the nightly hotel limit for employees in India?","INR 10,000",DOC-000041,policy,medium,India,DOC-000060;DOC-000038;DOC-000001;DOC-000061;DOC-000067
+Q-00143,What new launch date was agreed for Project Indigo in the steering sync on 28 January 2026?,3 June 2026,DOC-000188,meeting_notes,easy,,
+Q-00144,How much additional budget was approved for Project Keystone in the steering sync on 26 August 2026?,"USD 50,000",DOC-000199,meeting_notes,easy,,
+Q-00145,How much additional budget was approved for Project Glacier in the steering sync on 8 June 2025?,"USD 100,000",DOC-000209,meeting_notes,easy,,
+Q-00146,What is the approved budget for Project Vertex?,"USD 2,895,000",DOC-000181,project_brief,easy,,DOC-000162;DOC-000159;DOC-000160;DOC-000166;DOC-000173
+Q-00147,Who is the owner of Project Glacier?,Arjun Ali,DOC-000170,project_brief,easy,,DOC-000176;DOC-000184;DOC-000169;DOC-000180;DOC-000182
+Q-00148,"Hi, what is the recommended maximum pull request size in United States?",300 lines,DOC-000083,policy,medium,United States,DOC-000082;DOC-000052;DOC-000021;DOC-000019;DOC-000013
+Q-00149,I need to know. Who is the owner of Project Tundra?,Michael Wagner,DOC-000183,project_brief,medium,,DOC-000186;DOC-000179;DOC-000177;DOC-000175;DOC-000181
+Q-00150,I need to know. How long is email retained in United States?,2 years,DOC-000012,policy,medium,United States,DOC-000057;DOC-000037;DOC-000090;DOC-000032

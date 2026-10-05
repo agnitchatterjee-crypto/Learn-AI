@@ -1,0 +1,12 @@
+department_id,name,head_employee_id,cost_center
+EXE,Executive Office,1,CC-1000
+ENG,Engineering,2,CC-1010
+SAL,Sales,3,CC-1020
+SUP,Customer Support,4,CC-1030
+OPS,Operations,5,CC-1040
+DAT,Data & Analytics,6,CC-1050
+FIN,Finance,7,CC-1060
+HR,Human Resources,8,CC-1070
+IT,IT Services,9,CC-1080
+MKT,Marketing,10,CC-1090
+LEG,Legal & Compliance,11,CC-1100

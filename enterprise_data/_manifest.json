@@ -1,0 +1,38 @@
+{
+  "args": {
+    "scale": "small",
+    "employees": 200,
+    "docs": 300,
+    "emails": 1500,
+    "tickets": 800,
+    "queries": 2000,
+    "projects": 30,
+    "services": 20,
+    "eval_queries": 150,
+    "doc_length": "medium",
+    "stale_rate": 0.3,
+    "start_date": "2023-01-01",
+    "end_date": "2026-09-30",
+    "seed": 42,
+    "out": "enterprise_data",
+    "formats": "csv,sqlite",
+    "no_doc_files": false,
+    "pdf_fraction": 0.0
+  },
+  "row_counts": {
+    "departments": 11,
+    "employees": 200,
+    "projects": 30,
+    "project_members": 188,
+    "services": 20,
+    "documents": 300,
+    "document_versions": 875,
+    "document_acl": 369,
+    "emails": 1500,
+    "tickets": 800,
+    "eval_queries": 150,
+    "eval_qrels": 1033,
+    "query_log": 2000
+  },
+  "pdf_files": 0
+}

@@ -1,0 +1,55 @@
+promo_key,promo_name,promo_type,discount_pct,start_date,end_date,channel,target_department
+0,No Promotion,None,0,2023-01-01,9999-12-31,All,All
+1,New Year Sale 2023,Percent Off,15,2023-01-01,2023-01-07,All,All
+2,Republic Day Sale 2023,Percent Off,20,2023-01-24,2023-01-28,All,All
+3,Summer Clearance 2023,Clearance,25,2023-04-20,2023-05-10,All,Apparel
+4,Monsoon Home Sale 2023,Percent Off,20,2023-07-01,2023-07-15,All,Home & Kitchen
+5,Independence Day Sale 2023,Percent Off,15,2023-08-10,2023-08-15,All,All
+6,Festive Season Sale 2023,Percent Off,18,2023-10-10,2023-11-05,All,All
+7,Black Friday Week 2023,Percent Off,30,2023-11-24,2023-11-30,All,Electronics
+8,Year End Sale 2023,Percent Off,25,2023-12-20,2023-12-31,All,All
+9,Sports Percent Off Mar 2023,Percent Off,20,2023-03-16,2023-04-03,In-Store,Sports
+10,Apparel Loyalty Mar 2023,Loyalty,10,2023-03-27,2023-04-09,In-Store,Apparel
+11,Apparel Percent Off Apr 2023,Percent Off,15,2023-04-25,2023-05-05,All,Apparel
+12,Sports BOGO Jul 2023,BOGO,25,2023-07-13,2023-07-30,All,Sports
+13,Grocery BOGO Feb 2023,BOGO,25,2023-02-11,2023-02-25,In-Store,Grocery
+14,Grocery Percent Off Mar 2023,Percent Off,20,2023-03-22,2023-04-01,All,Grocery
+15,New Year Sale 2024,Percent Off,15,2024-01-01,2024-01-07,All,All
+16,Republic Day Sale 2024,Percent Off,20,2024-01-24,2024-01-28,All,All
+17,Summer Clearance 2024,Clearance,25,2024-04-20,2024-05-10,All,Apparel
+18,Monsoon Home Sale 2024,Percent Off,20,2024-07-01,2024-07-15,All,Home & Kitchen
+19,Independence Day Sale 2024,Percent Off,15,2024-08-10,2024-08-15,All,All
+20,Festive Season Sale 2024,Percent Off,18,2024-10-10,2024-11-05,All,All
+21,Black Friday Week 2024,Percent Off,30,2024-11-24,2024-11-30,All,Electronics
+22,Year End Sale 2024,Percent Off,25,2024-12-20,2024-12-31,All,All
+23,Beauty Percent Off Jan 2024,Percent Off,15,2024-01-11,2024-01-18,In-Store,Beauty
+24,Grocery Percent Off Oct 2024,Percent Off,15,2024-10-25,2024-11-12,Online,Grocery
+25,Beauty Bundle Aug 2024,Bundle,12,2024-08-17,2024-08-31,Online,Beauty
+26,Beauty Loyalty May 2024,Loyalty,10,2024-05-25,2024-06-09,In-Store,Beauty
+27,Home & Kitchen BOGO Jan 2024,BOGO,25,2024-01-30,2024-02-10,Online,Home & Kitchen
+28,Electronics Loyalty Mar 2024,Loyalty,10,2024-03-04,2024-03-11,Online,Electronics
+29,New Year Sale 2025,Percent Off,15,2025-01-01,2025-01-07,All,All
+30,Republic Day Sale 2025,Percent Off,20,2025-01-24,2025-01-28,All,All
+31,Summer Clearance 2025,Clearance,25,2025-04-20,2025-05-10,All,Apparel
+32,Monsoon Home Sale 2025,Percent Off,20,2025-07-01,2025-07-15,All,Home & Kitchen
+33,Independence Day Sale 2025,Percent Off,15,2025-08-10,2025-08-15,All,All
+34,Festive Season Sale 2025,Percent Off,18,2025-10-10,2025-11-05,All,All
+35,Black Friday Week 2025,Percent Off,30,2025-11-24,2025-11-30,All,Electronics
+36,Year End Sale 2025,Percent Off,25,2025-12-20,2025-12-31,All,All
+37,Sports Percent Off Jul 2025,Percent Off,20,2025-07-02,2025-07-16,In-Store,Sports
+38,Apparel Percent Off Oct 2025,Percent Off,15,2025-10-01,2025-10-17,All,Apparel
+39,Sports Bundle Sep 2025,Bundle,12,2025-09-10,2025-09-19,All,Sports
+40,Home & Kitchen Percent Off Feb 2025,Percent Off,10,2025-02-18,2025-03-02,In-Store,Home & Kitchen
+41,Storewide Bundle Aug 2025,Bundle,12,2025-08-25,2025-09-05,All,All
+42,Grocery Bundle Aug 2025,Bundle,12,2025-08-01,2025-08-08,Online,Grocery
+43,New Year Sale 2026,Percent Off,15,2026-01-01,2026-01-07,All,All
+44,Republic Day Sale 2026,Percent Off,20,2026-01-24,2026-01-28,All,All
+45,Summer Clearance 2026,Clearance,25,2026-04-20,2026-05-10,All,Apparel
+46,Monsoon Home Sale 2026,Percent Off,20,2026-07-01,2026-07-15,All,Home & Kitchen
+47,Independence Day Sale 2026,Percent Off,15,2026-08-10,2026-08-15,All,All
+48,Beauty Percent Off Apr 2026,Percent Off,10,2026-04-22,2026-05-05,In-Store,Beauty
+49,Storewide Percent Off Apr 2026,Percent Off,15,2026-04-19,2026-05-03,In-Store,All
+50,Apparel Percent Off Mar 2026,Percent Off,10,2026-03-27,2026-04-13,In-Store,Apparel
+51,Apparel Loyalty Jan 2026,Loyalty,10,2026-01-07,2026-01-20,Online,Apparel
+52,Sports BOGO Apr 2026,BOGO,25,2026-04-07,2026-04-25,Online,Sports
+53,Sports BOGO Apr 2026,BOGO,25,2026-04-24,2026-05-12,All,Sports

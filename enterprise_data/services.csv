@@ -1,0 +1,21 @@
+service_id,name,owner_employee_id,owner_department_id,language,database,message_queue,tier,availability_slo_pct,p95_latency_ms,repo_url
+SVC-0001,ingestion-gateway,60,ENG,Python,MongoDB,RabbitMQ,3,99.9,450,https://git.northwind-analytics.example.com/platform/ingestion-gateway
+SVC-0002,reporting-gateway,60,ENG,Kotlin,MongoDB,Azure Service Bus,3,99.9,900,https://git.northwind-analytics.example.com/platform/reporting-gateway
+SVC-0003,ingestion-engine,15,ENG,Kotlin,MongoDB,Kafka,1,99.99,120,https://git.northwind-analytics.example.com/platform/ingestion-engine
+SVC-0004,inventory-engine,15,ENG,Go,Cassandra,Azure Service Bus,2,99.5,600,https://git.northwind-analytics.example.com/platform/inventory-engine
+SVC-0005,analytics-engine,38,ENG,Node.js,DynamoDB,RabbitMQ,2,99.99,300,https://git.northwind-analytics.example.com/platform/analytics-engine
+SVC-0006,search-sync,25,ENG,Kotlin,DynamoDB,Kafka,3,99.95,900,https://git.northwind-analytics.example.com/platform/search-sync
+SVC-0007,ledger-service,30,ENG,Python,PostgreSQL,Amazon SQS,1,99.99,600,https://git.northwind-analytics.example.com/platform/ledger-service
+SVC-0008,orders-hub,23,ENG,Node.js,MongoDB,Amazon SQS,1,99.5,80,https://git.northwind-analytics.example.com/platform/orders-hub
+SVC-0009,ledger-sync,45,ENG,Node.js,MongoDB,Amazon SQS,1,99.9,80,https://git.northwind-analytics.example.com/platform/ledger-sync
+SVC-0010,profile-engine,25,ENG,Node.js,DynamoDB,Azure Service Bus,1,99.5,80,https://git.northwind-analytics.example.com/platform/profile-engine
+SVC-0011,notification-hub,50,ENG,Kotlin,PostgreSQL,Amazon SQS,2,99.5,200,https://git.northwind-analytics.example.com/platform/notification-hub
+SVC-0012,payments-api,93,ENG,Node.js,PostgreSQL,RabbitMQ,3,99.9,600,https://git.northwind-analytics.example.com/platform/payments-api
+SVC-0013,profile-sync,60,ENG,Java,MySQL,Amazon SQS,2,99.95,300,https://git.northwind-analytics.example.com/platform/profile-sync
+SVC-0014,ingestion-sync,23,ENG,Python,MySQL,Azure Service Bus,2,99.99,200,https://git.northwind-analytics.example.com/platform/ingestion-sync
+SVC-0015,recommendation-sync,146,ENG,Python,MongoDB,Amazon SQS,1,99.99,450,https://git.northwind-analytics.example.com/platform/recommendation-sync
+SVC-0016,ledger-gateway,195,ENG,Java,DynamoDB,Kafka,1,99.95,80,https://git.northwind-analytics.example.com/platform/ledger-gateway
+SVC-0017,reporting-service,60,ENG,Go,Cassandra,Azure Service Bus,2,99.99,200,https://git.northwind-analytics.example.com/platform/reporting-service
+SVC-0018,shipping-service,93,ENG,Kotlin,MySQL,Amazon SQS,2,99.9,300,https://git.northwind-analytics.example.com/platform/shipping-service
+SVC-0019,auth-api,46,ENG,Java,DynamoDB,Amazon SQS,2,99.99,450,https://git.northwind-analytics.example.com/platform/auth-api
+SVC-0020,auth-engine,30,ENG,Go,DynamoDB,Amazon SQS,2,99.95,80,https://git.northwind-analytics.example.com/platform/auth-engine
