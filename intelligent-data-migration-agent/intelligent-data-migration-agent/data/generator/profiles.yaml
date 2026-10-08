@@ -1,0 +1,60 @@
+# Volume profiles for the synthetic retail platform.
+# Anchors (customers / products / orders) drive everything else through the ratios below.
+# Generated row counts are reported in each run's manifest.json; docs/data-volumes.md is built from those manifests.
+
+common:
+  seed: 20261005
+  history_start: "2024-01-01"     # initial load covers history_start .. history_end
+  history_end: "2026-09-30"
+  incremental_days: 3             # second load: 2026-10-01 .. 2026-10-03 plus corrections to history
+  as_of: "2026-10-05"             # run date assumed when computing aggregate expectations
+
+profiles:
+  tiny:   {customers: 300,    products: 60,     orders: 1500}      # CI / unit tests, seconds
+  small:  {customers: 5000,   products: 400,    orders: 30000}     # laptop development
+  medium: {customers: 50000,  products: 2000,   orders: 300000}    # default; ~2.75 years of a mid-size online retailer
+  large:  {customers: 500000, products: 20000,  orders: 3000000}   # stress / performance (needs several GB of RAM)
+
+rates:
+  # --- order shape
+  lines_per_order: [[1, 35], [2, 30], [3, 18], [4, 10], [5, 5], [6, 2]]   # [lines, weight]; mean about 2.3
+  twin_order_rate: 0.06            # repeat purchase by the same customer within 4 days (drives combined payments/shipments)
+  cancelled_order_rate: 0.03
+  cancel_line_rate: 0.015          # CANCEL lines inside non-cancelled multi-line orders
+  header_discount_rate: 0.20
+  line_discount_rate: 0.25
+  return_rate: 0.07                # of non-cancelled orders; return line arrives 3-30 days later
+  refund_rate: 0.90                # of returns that produce a REFUND payment
+  # --- customers / products
+  customer_dup_rate: 0.20          # extra stale rows in the customer extract
+  customer_blank_id_rate: 0.001
+  customer_change_rate: 0.04       # SCD2 changes in the incremental load
+  customer_new_rate: 0.005         # new customers in the incremental load
+  email_invalid_rate: 0.02
+  product_test_rate: 0.01
+  product_price_change_rate: 0.05  # incremental load
+  product_status_flip_rate: 0.01
+  product_new_rate: 0.01
+  product_removed_rate: 0.005
+  # --- planted data-quality defects (each at least 1 row even in tiny)
+  unknown_customer_order_rate: 0.005   # order references a customer that does not exist -> unknown member (-1)
+  unknown_product_line_rate: 0.004     # -> reject UNKNOWN_PRODUCT
+  bad_quantity_line_rate: 0.002        # -> reject BAD_QUANTITY
+  null_price_line_rate: 0.001          # -> reject BAD_PRICE
+  return_no_original_rate: 0.03        # of returns -> reject RETURN_NO_ORIGINAL
+  no_fx_order_rate: 0.001              # CHF orders, no rate -> reject NO_FX_RATE (and payments skipped)
+  bad_order_date_rate: 0.001           # unparseable order_date -> header rejected in staging
+  late_arriving_order_rate: 0.01       # modified_at 5-40 days after order date
+  held_back_order_rate: 0.003          # order arrives one load after its payments -> orphan payments, then reconciled
+  touched_order_rate: 0.01             # header-only correction in the incremental load
+  # --- payments / shipments
+  split_payment_rate: 0.05
+  combined_payment_rate: 0.40          # of eligible adjacent same-customer order pairs
+  failed_payment_rate: 0.02
+  chargeback_rate: 0.003
+  duplicate_payment_doc_rate: 0.01
+  invalid_json_doc_rate: 0.001
+  consolidated_shipment_rate: 0.40     # of eligible adjacent same-customer order pairs
+  late_delivery_rate: 0.12
+  lost_shipment_rate: 0.005
+  invalid_xml_doc_rate: 0.002

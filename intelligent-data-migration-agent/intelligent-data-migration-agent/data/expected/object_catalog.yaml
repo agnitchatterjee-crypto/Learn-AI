@@ -1,0 +1,240 @@
+# Hand-labelled ground truth for the synthetic SQL Server source platform.
+# Used to evaluate: object discovery, dependency extraction, construct detection,
+# complexity classification and target recommendation.
+#
+# complexity: TRIVIAL | LOW | MEDIUM | HIGH | EXTREME
+# reads / writes / calls  -> statically visible references (checked by scripts/check_source_platform.py)
+# dynamic_calls           -> only resolvable at run time (EXEC via sp_executesql)
+
+platform:
+  name: retail_order_to_cash
+  source: SQL Server 2017+
+  counts: {tables: 24, views: 5, functions: 5, procedures: 16}
+
+tables:
+  - {name: lnd.customer,                  layer: landing, loaded_by: external_ingestion}
+  - {name: lnd.product,                   layer: landing, loaded_by: external_ingestion}
+  - {name: lnd.order_header,              layer: landing, loaded_by: external_ingestion}
+  - {name: lnd.order_line,                layer: landing, loaded_by: external_ingestion}
+  - {name: lnd.payment,                   layer: landing, loaded_by: external_ingestion, notes: JSON payload column}
+  - {name: lnd.shipment,                  layer: landing, loaded_by: external_ingestion, notes: XML payload column}
+  - {name: stg.customer,                  layer: staging, loaded_by: stg.usp_load_customer}
+  - {name: stg.product,                   layer: staging, loaded_by: stg.usp_load_product}
+  - {name: stg.order_header,              layer: staging, loaded_by: stg.usp_load_orders, notes: incremental}
+  - {name: stg.order_line,                layer: staging, loaded_by: stg.usp_load_orders, notes: incremental}
+  - {name: stg.payment,                   layer: staging, loaded_by: stg.usp_load_payments}
+  - {name: stg.shipment,                  layer: staging, loaded_by: stg.usp_load_shipments}
+  - {name: ref.currency_rate,             layer: reference, loaded_by: manual_reference_data}
+  - {name: dim.date,                      layer: dimension, loaded_by: dim.usp_load_dim_date}
+  - {name: dim.product,                   layer: dimension, loaded_by: dim.usp_load_dim_product, scd: 1}
+  - {name: dim.customer,                  layer: dimension, loaded_by: dim.usp_load_dim_customer, scd: 2}
+  - {name: fact.order_line,               layer: fact, loaded_by: fact.usp_load_fact_order_line, grain: order line}
+  - {name: fact.order_line_reject,        layer: fact, loaded_by: fact.usp_load_fact_order_line}
+  - {name: fact.payment,                  layer: fact, loaded_by: fact.usp_load_fact_payment, grain: payment x order}
+  - {name: fact.shipment,                 layer: fact, loaded_by: fact.usp_load_fact_shipment, grain: shipment x order}
+  - {name: agg.customer_monthly_revenue,  layer: aggregate, loaded_by: agg.usp_refresh_customer_monthly_revenue}
+  - {name: etl.load_audit,                layer: control, loaded_by: etl.usp_write_audit}
+  - {name: etl.watermark,                 layer: control, loaded_by: etl.usp_get_set_watermark}
+  - {name: etl.pipeline_step,             layer: control, loaded_by: seed/02_pipeline_steps.sql}
+
+dynamic_objects:
+  - {name: agg.customer_revenue_trailing, created_by: agg.usp_refresh_customer_monthly_revenue, notes: created by SELECT INTO from dynamic SQL; no static DDL}
+
+functions:
+  - name: dbo.fn_business_days
+    kind: scalar
+    complexity: MEDIUM
+    reads: [dim.date]
+    constructs: [scalar_udf, datediff_week, datename_weekday, language_dependent, table_lookup_in_udf]
+    recommended_target: snowflake_sql_udf_or_dbt_macro
+  - name: dbo.fn_clean_name
+    kind: scalar
+    complexity: MEDIUM
+    constructs: [scalar_udf, while_loop, string_functions]
+    recommended_target: snowflake_sql_udf   # INITCAP + REGEXP_REPLACE replaces the loop
+  - name: dbo.fn_fiscal_period
+    kind: inline_tvf
+    complexity: LOW
+    constructs: [inline_tvf, date_functions]
+    recommended_target: dbt_macro_or_cte
+  - name: dbo.fn_convert_currency
+    kind: scalar
+    complexity: MEDIUM
+    reads: [ref.currency_rate]
+    constructs: [scalar_udf, select_top_order_by, table_lookup_in_udf]
+    recommended_target: dbt_model_join   # as-of join (QUALIFY ROW_NUMBER) instead of a UDF
+  - name: dbo.fn_customer_tier
+    kind: scalar
+    complexity: TRIVIAL
+    constructs: [scalar_udf, case]
+    recommended_target: dbt_macro
+
+views:
+  - name: rpt.vw_customer_current
+    complexity: LOW
+    reads: [dim.customer, agg.customer_monthly_revenue]
+    calls: [dbo.fn_customer_tier]
+    constructs: [left_join, derived_table, group_by, scalar_udf_call]
+    recommended_target: dbt_model_view
+  - name: rpt.vw_customer_revenue
+    complexity: LOW
+    reads: [fact.order_line, dim.customer]
+    constructs: [self_join_dimension, group_by, count_distinct, conditional_aggregation]
+    recommended_target: dbt_model_view
+  - name: rpt.vw_sales_daily
+    complexity: MEDIUM
+    reads: [fact.order_line, dim.date, dim.product]
+    constructs: [cte, window_functions, rows_between_frame]
+    recommended_target: dbt_model_view
+  - name: rpt.vw_order_fulfilment_sla
+    complexity: MEDIUM
+    reads: [fact.shipment, dim.date]
+    calls: [dbo.fn_business_days]
+    constructs: [multi_join_same_table, case, window_average, scalar_udf_call]
+    recommended_target: dbt_model_view
+  - name: rpt.vw_customer_cohort_retention
+    complexity: HIGH
+    reads: [fact.order_line, dim.date, dim.customer]
+    constructs: [multiple_ctes, window_functions, lag, first_value, datediff_month, datefromparts]
+    recommended_target: dbt_model_view
+
+procedures:
+  - name: etl.usp_write_audit
+    complexity: TRIVIAL
+    writes: [etl.load_audit]
+    constructs: [output_param, scope_identity, default_params]
+    recommended_target: replace_with_dbt_artifacts_or_on_run_end_hook
+
+  - name: etl.usp_get_set_watermark
+    complexity: TRIVIAL
+    reads: [etl.watermark]
+    writes: [etl.watermark]
+    constructs: [output_param, rowcount_check, throw]
+    recommended_target: replace_with_dbt_is_incremental
+
+  - name: stg.usp_load_product
+    complexity: LOW
+    reads: [lnd.product]
+    writes: [stg.product]
+    calls: [etl.usp_write_audit]
+    constructs: [truncate_insert, isnull, nullif, convert, ltrim_rtrim, try_catch, throw, procid]
+    recommended_target: dbt_staging_model
+
+  - name: stg.usp_load_customer
+    complexity: LOW
+    reads: [lnd.customer]
+    writes: [stg.customer]
+    calls: [etl.usp_write_audit, dbo.fn_clean_name]
+    constructs: [row_number_dedup, try_convert, convert_style_code, charindex_substring, iif, cross_apply_scalar, try_catch]
+    recommended_target: dbt_staging_model
+
+  - name: stg.usp_load_orders
+    complexity: MEDIUM
+    reads: [lnd.order_header, lnd.order_line]
+    writes: [stg.order_header, stg.order_line]
+    calls: [etl.usp_get_set_watermark, etl.usp_write_audit]
+    constructs: [watermark_incremental, temp_tables, dateadd, datediff, try_convert_style_code, row_number_dedup, explicit_transaction, delete_insert]
+    recommended_target: dbt_incremental_staging_models
+
+  - name: stg.usp_load_payments
+    complexity: MEDIUM
+    reads: [lnd.payment]
+    writes: [stg.payment]
+    calls: [etl.usp_get_set_watermark, etl.usp_write_audit]
+    constructs: [openjson_with, cross_apply_openjson, isjson, nested_json_array, watermark_incremental, explicit_transaction]
+    recommended_target: dbt_staging_model_lateral_flatten_variant
+
+  - name: stg.usp_load_shipments
+    complexity: HIGH
+    reads: [lnd.shipment]
+    writes: [stg.shipment]
+    calls: [etl.usp_get_set_watermark, etl.usp_write_audit]
+    constructs: [xml_nodes, xml_value, xml_exist, xpath_predicates, parent_axis, watermark_incremental, explicit_transaction]
+    recommended_target: dbt_staging_model_parse_xml_xmlget
+    notes: Snowflake has no XML column type; needs PARSE_XML/XMLGET or upstream conversion to JSON.
+
+  - name: dim.usp_load_dim_date
+    complexity: MEDIUM
+    reads: [dim.date]
+    writes: [dim.date]
+    calls: [dbo.fn_fiscal_period, etl.usp_write_audit]
+    constructs: [recursive_cte, maxrecursion_hint, while_loop, set_datefirst, datepart_weekday, datename, datefromparts, cross_apply_tvf]
+    recommended_target: dbt_model_date_spine
+
+  - name: dim.usp_load_dim_product
+    complexity: MEDIUM
+    reads: [stg.product]
+    writes: [dim.product]
+    calls: [etl.usp_write_audit]
+    constructs: [merge, output_action_into_temp, not_matched_by_source, scd1, soft_delete, empty_source_guard, identity_surrogate_key]
+    recommended_target: dbt_model_table_or_incremental_merge
+
+  - name: dim.usp_load_dim_customer
+    complexity: HIGH
+    reads: [stg.customer]
+    writes: [dim.customer]
+    calls: [etl.usp_write_audit]
+    constructs: [merge, output_into_temp_all_source_columns, scd2, hashbytes_sha2_256, concat, explicit_transaction, filtered_unique_index, unknown_member, identity_surrogate_key]
+    recommended_target: dbt_snapshot
+
+  - name: fact.usp_load_fact_order_line
+    complexity: EXTREME
+    reads: [stg.order_header, stg.order_line, dim.customer, dim.product]
+    writes: [fact.order_line, fact.order_line_reject]
+    calls: [etl.usp_get_set_watermark, etl.usp_write_audit, dbo.fn_convert_currency]
+    constructs: [temp_tables, chained_ctes, outer_apply_top1, window_sum_over_partition, row_number, point_in_time_scd2_join, unknown_member_fallback, discount_allocation_with_remainder, reject_routing, batched_window_loop, per_window_transaction, update_from_join, delete_from_join, scalar_udf_in_select, watermark_incremental, try_catch_rethrow]
+    recommended_target: dbt_incremental_model_plus_reject_model_and_tests
+
+  - name: fact.usp_load_fact_payment
+    complexity: HIGH
+    reads: [stg.payment, fact.order_line]
+    writes: [fact.payment]
+    calls: [dbo.fn_convert_currency, etl.usp_write_audit]
+    constructs: [temp_tables, select_into, pivot, window_running_total, merge, output_action_into_temp, update_output_into, outer_apply_top1, orphan_reconciliation, late_arriving_data, explicit_transaction]
+    recommended_target: dbt_incremental_model
+
+  - name: fact.usp_load_fact_shipment
+    complexity: MEDIUM
+    reads: [stg.shipment, dim.date, fact.order_line]
+    writes: [fact.shipment]
+    calls: [dbo.fn_business_days, etl.usp_write_audit]
+    constructs: [merge, output_action_into_temp, scalar_udf_in_select, unknown_member_date_keys, case_status_derivation, outer_apply_top1]
+    recommended_target: dbt_incremental_model
+
+  - name: agg.usp_refresh_customer_monthly_revenue
+    complexity: EXTREME
+    reads: [fact.order_line, dim.date, dim.customer, agg.customer_monthly_revenue]
+    writes: [agg.customer_monthly_revenue, agg.customer_revenue_trailing]
+    calls: [dbo.fn_customer_tier, etl.usp_write_audit]
+    constructs: [cursor_local_fast_forward, row_by_row_insert, running_total_with_opening_balance, dynamic_sql, sp_executesql, dynamic_pivot, string_agg_within_group, quotename, global_temp_table, select_into, drop_table_if_exists, cursor_cleanup_in_catch, delete_reinsert_window, anchor_key_across_scd2]
+    recommended_target: dbt_table_model_window_functions_and_dbt_utils_pivot
+    notes: Cursor becomes SUM() OVER; dynamic pivot becomes a Jinja loop or dbt_utils.pivot.
+
+  - name: etl.usp_run_daily_load
+    complexity: EXTREME
+    reads: [etl.pipeline_step]
+    calls: [etl.usp_write_audit]
+    sequences: [etl.seq_batch_id]
+    dynamic_calls:
+      - stg.usp_load_product
+      - stg.usp_load_customer
+      - stg.usp_load_orders
+      - stg.usp_load_payments
+      - stg.usp_load_shipments
+      - dim.usp_load_dim_date
+      - dim.usp_load_dim_product
+      - dim.usp_load_dim_customer
+      - fact.usp_load_fact_order_line
+      - fact.usp_load_fact_payment
+      - fact.usp_load_fact_shipment
+      - agg.usp_refresh_customer_monthly_revenue
+    constructs: [sp_getapplock, sp_releaseapplock, dynamic_sql, sp_executesql, insert_exec, nested_try_catch, retry_loop, waitfor_delay, xact_state, error_functions, string_split, next_value_for_sequence, raiserror, metadata_driven_pipeline, temp_tables]
+    recommended_target: orchestration_not_a_dbt_model
+    notes: Replace with dbt DAG + Snowflake Tasks or Airflow; retry/locking semantics move to the scheduler.
+
+  - name: etl.usp_rebuild_indexes
+    complexity: MEDIUM
+    calls: []
+    constructs: [cursor_local_fast_forward, dynamic_sql, sp_executesql, dm_db_index_physical_stats, alter_index, quotename, print]
+    recommended_target: retire
+    notes: Snowflake has no user-managed indexes; micro-partitioning and clustering keys replace this.

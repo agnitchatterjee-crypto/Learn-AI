@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(python -c ' *)",
-      "Bash(./.venv/Scripts/python.exe -c ' *)"
+      "Bash(./.venv/Scripts/python.exe -c ' *)",
+      "Bash(sed 's/.*\\\\.//')",
+      "Bash(python scripts/bundle_source_code.py)"
     ]
   }
 }

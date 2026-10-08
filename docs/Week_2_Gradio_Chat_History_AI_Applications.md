@@ -628,7 +628,126 @@ Limitations:
 
 ---
 
-# 13. Model Capability vs Application Bugs
+# 13. Model Selection for the Intelligent Data Migration Agent
+
+I currently have **`qwen3:8b`** available locally through Ollama.
+
+For the initial version of the **Intelligent Data Migration Agent**, I decided to continue using this model rather than immediately moving to a larger model.
+
+The important learning is that the success of an agentic AI application should not depend only on choosing the largest available LLM. The application architecture, deterministic tools, context management and quality of the inputs are equally important.
+
+## Why `qwen3:8b` is a reasonable starting point
+
+For the current stage of the project, `qwen3:8b` is suitable for experimenting with:
+
+- SQL understanding
+- Python code generation
+- SQL / dbt code generation
+- Tool calling and agent workflows
+- Structured outputs
+- Individual database artifact analysis
+- Migration explanations and recommendations
+
+The model may be less capable when asked to perform very complex reasoning across a large repository or a very large amount of source code in a single context.
+
+Therefore, the architecture should avoid simply sending the entire source repository to the LLM.
+
+## Better architecture
+
+Instead of:
+
+```text
+55 SQL files
+      ↓
+bundle.md
+      ↓
+LLM
+      ↓
+"Understand everything"
+```
+
+use deterministic Python processing first:
+
+```text
+Source SQL files
+       ↓
+Deterministic Python analysis
+       ↓
+┌─────────────────────────┐
+│ Inventory               │
+│ Tables                  │
+│ Procedures              │
+│ Views                   │
+│ Functions               │
+│ Dependencies            │
+│ SQL constructs          │
+│ Complexity              │
+│ Lineage / relationships │
+└─────────────────────────┘
+       ↓
+Structured metadata
+       ↓
+Qwen3 8B
+       ↓
+Migration reasoning
+       ↓
+Migration plan / SQL / dbt / mappings
+```
+
+This follows an important AI engineering principle:
+
+> **Use deterministic code to extract facts; use the LLM to interpret those facts and make migration recommendations.**
+
+## Model abstraction
+
+The model should also remain configurable rather than being hard-coded throughout the application.
+
+Conceptually:
+
+```text
+Migration Agent
+       ↓
+   Model Interface
+       │
+       ├── qwen3:8b
+       ├── qwen3.5:9b
+       ├── gpt-oss:20b
+       └── qwen3-coder:30b
+```
+
+The initial implementation can use `qwen3:8b`. Larger models can be introduced later and evaluated against the same migration tasks.
+
+## Future model evaluation
+
+Once the agent is functional, model selection itself can become an engineering experiment:
+
+```text
+                 Same migration task
+                         ↓
+          ┌──────────────┼──────────────┐
+          ↓              ↓              ↓
+      Qwen3 8B      Qwen3.5 9B     GPT-OSS 20B
+          │              │              │
+          └──────────────┼──────────────┘
+                         ↓
+                  Evaluation results
+```
+
+Potential evaluation dimensions include:
+
+- SQL / migration accuracy
+- Tool-calling reliability
+- Structured-output compliance
+- Reasoning quality
+- Response latency
+- Memory / resource consumption
+- Overall usefulness for migration tasks
+
+This is more useful than selecting a model purely based on parameter count.
+
+---
+
+# 15. Model Capability vs Application Bugs
 
 A very small model such as:
 
@@ -682,7 +801,7 @@ This is an important debugging distinction.
 
 ---
 
-# 14. Structured LLM Output
+# 15. Structured LLM Output
 
 The career planner currently generates mainly textual output.
 
@@ -723,7 +842,7 @@ This becomes particularly important for:
 
 ---
 
-# 15. Connection to the Intelligent Data Migration Agent
+# 16. Connection to the Intelligent Data Migration Agent
 
 The current experiments are directly relevant to the planned:
 
@@ -771,7 +890,7 @@ They are building the components needed for the larger architecture.
 
 ---
 
-# 16. Evolution of the Architecture
+# 17. Evolution of the Architecture
 
 ## Level 1 — Simple LLM Call
 
@@ -869,7 +988,7 @@ RAG + Tools + Agent + Data Engineering
 
 ---
 
-# 17. Key Concepts Learned
+# 18. Key Concepts Learned
 
 ## Gradio
 
@@ -925,7 +1044,7 @@ This distinction becomes critical when context windows and token costs become im
 
 ---
 
-# 18. Engineering Lessons
+# 19. Engineering Lessons
 
 ### Lesson 1
 
@@ -968,7 +1087,7 @@ Text is useful for humans; structured data is much more useful for software.
 
 ---
 
-# 19. Next Learning Steps
+# 20. Next Learning Steps
 
 ## Step 1 — Clean up the chatbot
 
@@ -1070,7 +1189,7 @@ Migration Artifacts
 
 ---
 
-# 20. Overall Progress
+# 21. Overall Progress
 
 The biggest shift during these sessions was:
 
