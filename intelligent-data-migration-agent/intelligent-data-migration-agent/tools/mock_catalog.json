@@ -1,0 +1,1838 @@
+{
+  "agg.customer_monthly_revenue": {
+    "columns": [
+      {
+        "name": "customer_key",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "month_start",
+        "type": "date",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_count",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "sales_revenue_usd",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "returns_usd",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "net_revenue_usd",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "cumulative_net_revenue_usd",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "cumulative_order_count",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "customer_tier",
+        "type": "varchar(10)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "load_batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "customer_key",
+      "month_start"
+    ]
+  },
+  "dim.customer": {
+    "columns": [
+      {
+        "name": "customer_key",
+        "type": "int",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "customer_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "first_name",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "last_name",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "full_name",
+        "type": "nvarchar(200)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "email",
+        "type": "varchar(255)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "phone",
+        "type": "varchar(50)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "address_line",
+        "type": "nvarchar(255)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "city",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "state_code",
+        "type": "varchar(10)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "country_code",
+        "type": "char(2)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "customer_segment",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "row_hash",
+        "type": "binary(32)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "effective_from",
+        "type": "date",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "effective_to",
+        "type": "date",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "is_current",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "customer_key"
+    ]
+  },
+  "dim.date": {
+    "columns": [
+      {
+        "name": "date_key",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "full_date",
+        "type": "date",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "day_of_week",
+        "type": "tinyint",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "day_name",
+        "type": "varchar(10)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "day_of_month",
+        "type": "tinyint",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "day_of_year",
+        "type": "smallint",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "iso_week",
+        "type": "tinyint",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "month_number",
+        "type": "tinyint",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "month_name",
+        "type": "varchar(10)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "quarter_number",
+        "type": "tinyint",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "calendar_year",
+        "type": "smallint",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "is_weekend",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "is_holiday",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "fiscal_year",
+        "type": "smallint",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "fiscal_quarter",
+        "type": "tinyint",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "fiscal_period",
+        "type": "tinyint",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "date_key"
+    ]
+  },
+  "dim.product": {
+    "columns": [
+      {
+        "name": "product_key",
+        "type": "int",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "product_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "product_name",
+        "type": "nvarchar(200)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "category",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "subcategory",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "brand",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "list_price",
+        "type": "decimal(18,2)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "unit_cost",
+        "type": "decimal(18,2)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "status",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "is_active",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "product_key"
+    ]
+  },
+  "etl.load_audit": {
+    "columns": [
+      {
+        "name": "audit_id",
+        "type": "bigint",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "procedure_name",
+        "type": "sysname",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "step_name",
+        "type": "varchar(100)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "start_time",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "end_time",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "status",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "rows_read",
+        "type": "int",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "rows_inserted",
+        "type": "int",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "rows_updated",
+        "type": "int",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "rows_rejected",
+        "type": "int",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "target_row_count",
+        "type": "bigint",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "error_number",
+        "type": "int",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "error_message",
+        "type": "nvarchar(4000)",
+        "nullable": true,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "audit_id"
+    ]
+  },
+  "etl.pipeline_step": {
+    "columns": [
+      {
+        "name": "step_order",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "step_name",
+        "type": "varchar(100)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "proc_name",
+        "type": "nvarchar(300)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "target_table",
+        "type": "nvarchar(300)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "is_enabled",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "max_retries",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "continue_on_error",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "step_order"
+    ]
+  },
+  "etl.watermark": {
+    "columns": [
+      {
+        "name": "source_name",
+        "type": "varchar(100)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "last_value",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "source_name"
+    ]
+  },
+  "fact.order_line": {
+    "columns": [
+      {
+        "name": "order_line_key",
+        "type": "bigint",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "order_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "line_no",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_date_key",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "customer_key",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "product_key",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "channel",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "ship_country",
+        "type": "char(2)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "currency_code",
+        "type": "char(3)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_status",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "line_type",
+        "type": "varchar(10)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "quantity",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "unit_price",
+        "type": "decimal(18,4)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "gross_amount",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "discount_amount",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "net_amount",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "net_amount_usd",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "is_return",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "is_unknown_customer",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "source_modified_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "load_batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "order_line_key"
+    ]
+  },
+  "fact.order_line_reject": {
+    "columns": [
+      {
+        "name": "reject_id",
+        "type": "bigint",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "load_batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "line_no",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_date",
+        "type": "date",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "product_src_id",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "reject_code",
+        "type": "varchar(30)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "reject_reason",
+        "type": "varchar(500)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "rejected_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "reject_id"
+    ]
+  },
+  "fact.payment": {
+    "columns": [
+      {
+        "name": "payment_key",
+        "type": "bigint",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "payment_src_id",
+        "type": "varchar(30)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "payment_date_key",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "customer_key",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "method",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "payment_type",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "status",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "currency_code",
+        "type": "char(3)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "amount_signed",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "amount_signed_usd",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "running_paid_usd",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_net_paid_usd",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_net_amount_usd",
+        "type": "decimal(18,2)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "is_order_paid_in_full",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "is_orphan",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "event_ts",
+        "type": "datetime2",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "load_batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "payment_key"
+    ]
+  },
+  "fact.shipment": {
+    "columns": [
+      {
+        "name": "shipment_key",
+        "type": "bigint",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "shipment_src_id",
+        "type": "varchar(30)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "customer_key",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "carrier",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "ship_date_key",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "delivered_date_key",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "promised_date_key",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "weight_kg",
+        "type": "decimal(9,3)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "transit_business_days",
+        "type": "int",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "promised_business_days",
+        "type": "int",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "delivery_status",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "is_sla_breach",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "load_batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "created_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "shipment_key"
+    ]
+  },
+  "lnd.customer": {
+    "columns": [
+      {
+        "name": "lnd_id",
+        "type": "bigint",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "customer_src_id",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "full_name",
+        "type": "nvarchar(200)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "email",
+        "type": "varchar(255)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "phone",
+        "type": "varchar(50)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "address_line",
+        "type": "nvarchar(255)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "city",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "state_code",
+        "type": "varchar(10)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "country_code",
+        "type": "varchar(10)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "customer_segment",
+        "type": "varchar(50)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "created_date",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "modified_at",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "extract_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "extracted_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "lnd_id"
+    ]
+  },
+  "lnd.order_header": {
+    "columns": [
+      {
+        "name": "lnd_id",
+        "type": "bigint",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "order_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "customer_src_id",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "order_date",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "order_status",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "currency_code",
+        "type": "varchar(10)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "channel",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "ship_country",
+        "type": "varchar(10)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "order_discount_amt",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "modified_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "extract_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "lnd_id"
+    ]
+  },
+  "lnd.order_line": {
+    "columns": [
+      {
+        "name": "lnd_id",
+        "type": "bigint",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "order_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "line_no",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "product_src_id",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "quantity",
+        "type": "int",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "unit_price",
+        "type": "decimal(18,4)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "line_discount_pct",
+        "type": "decimal(5,2)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "line_type",
+        "type": "varchar(10)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "modified_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "extract_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "lnd_id"
+    ]
+  },
+  "lnd.payment": {
+    "columns": [
+      {
+        "name": "lnd_id",
+        "type": "bigint",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "payment_src_id",
+        "type": "varchar(30)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "payload",
+        "type": "nvarchar(max)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "received_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "lnd_id"
+    ]
+  },
+  "lnd.product": {
+    "columns": [
+      {
+        "name": "lnd_id",
+        "type": "bigint",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "product_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "product_name",
+        "type": "nvarchar(200)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "category",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "subcategory",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "brand",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "list_price",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "unit_cost",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "status",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "modified_at",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "extract_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "extracted_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "lnd_id"
+    ]
+  },
+  "lnd.shipment": {
+    "columns": [
+      {
+        "name": "lnd_id",
+        "type": "bigint",
+        "nullable": false,
+        "identity": true
+      },
+      {
+        "name": "shipment_src_id",
+        "type": "varchar(30)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "payload_xml",
+        "type": "xml",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "received_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "lnd_id"
+    ]
+  },
+  "ref.currency_rate": {
+    "columns": [
+      {
+        "name": "rate_date",
+        "type": "date",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "from_currency",
+        "type": "char(3)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "to_currency",
+        "type": "char(3)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "rate",
+        "type": "decimal(18,8)",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "from_currency",
+      "to_currency",
+      "rate_date"
+    ]
+  },
+  "stg.customer": {
+    "columns": [
+      {
+        "name": "customer_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "first_name",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "last_name",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "full_name",
+        "type": "nvarchar(200)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "email",
+        "type": "varchar(255)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "phone",
+        "type": "varchar(50)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "address_line",
+        "type": "nvarchar(255)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "city",
+        "type": "nvarchar(100)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "state_code",
+        "type": "varchar(10)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "country_code",
+        "type": "char(2)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "customer_segment",
+        "type": "varchar(30)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "source_created_date",
+        "type": "date",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "source_modified_at",
+        "type": "datetime2",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "load_batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "loaded_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "customer_src_id"
+    ]
+  },
+  "stg.order_header": {
+    "columns": [
+      {
+        "name": "order_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "customer_src_id",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "order_date",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_status",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "currency_code",
+        "type": "char(3)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "channel",
+        "type": "varchar(30)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "ship_country",
+        "type": "char(2)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "order_discount_amt",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "days_to_land",
+        "type": "int",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "is_late_arriving",
+        "type": "bit",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "source_modified_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "load_batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "loaded_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "order_src_id"
+    ]
+  },
+  "stg.order_line": {
+    "columns": [
+      {
+        "name": "order_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "line_no",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "product_src_id",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "quantity",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "unit_price",
+        "type": "decimal(18,4)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "line_discount_pct",
+        "type": "decimal(5,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "line_type",
+        "type": "varchar(10)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "source_modified_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "load_batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "loaded_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "order_src_id",
+      "line_no"
+    ]
+  },
+  "stg.payment": {
+    "columns": [
+      {
+        "name": "payment_src_id",
+        "type": "varchar(30)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "method",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "payment_type",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "amount",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "currency_code",
+        "type": "char(3)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "status",
+        "type": "varchar(20)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "event_ts",
+        "type": "datetime2",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "gateway_ref",
+        "type": "varchar(50)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "load_batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "loaded_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "payment_src_id",
+      "order_src_id"
+    ]
+  },
+  "stg.product": {
+    "columns": [
+      {
+        "name": "product_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "product_name",
+        "type": "nvarchar(200)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "category",
+        "type": "nvarchar(100)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "subcategory",
+        "type": "nvarchar(100)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "brand",
+        "type": "nvarchar(100)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "list_price",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "unit_cost",
+        "type": "decimal(18,2)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "status",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "source_modified_at",
+        "type": "datetime2",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "load_batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "loaded_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "product_src_id"
+    ]
+  },
+  "stg.shipment": {
+    "columns": [
+      {
+        "name": "shipment_src_id",
+        "type": "varchar(30)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "order_src_id",
+        "type": "varchar(20)",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "carrier",
+        "type": "varchar(30)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "shipped_ts",
+        "type": "datetime2",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "delivered_ts",
+        "type": "datetime2",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "promised_ts",
+        "type": "datetime2",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "weight_kg",
+        "type": "decimal(9,3)",
+        "nullable": true,
+        "identity": false
+      },
+      {
+        "name": "load_batch_id",
+        "type": "int",
+        "nullable": false,
+        "identity": false
+      },
+      {
+        "name": "loaded_at",
+        "type": "datetime2",
+        "nullable": false,
+        "identity": false
+      }
+    ],
+    "primary_key": [
+      "shipment_src_id",
+      "order_src_id"
+    ]
+  }
+}

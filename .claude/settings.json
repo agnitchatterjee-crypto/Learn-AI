@@ -4,7 +4,18 @@
       "Bash(python -c ' *)",
       "Bash(./.venv/Scripts/python.exe -c ' *)",
       "Bash(sed 's/.*\\\\.//')",
-      "Bash(python scripts/bundle_source_code.py)"
+      "Bash(python scripts/bundle_source_code.py)",
+      "Bash(ls intelligent-data-migration-agent/intelligent-data-migration-agent week-2 docs)",
+      "Bash(cat requirements.txt)",
+      "Bash(ls scripts *)",
+      "Bash(mkdir -p tools tests)",
+      "Bash(python -m pytest tests -q)",
+      "Bash(sed -i 's/\\\\x08/\\\\\\\\b/g' tools/sql_tools.py)",
+      "Bash(sed -n '242p;253p' tools/sql_tools.py)",
+      "Bash(sed -i 's/refresh_catalog\\(force=True\\)/refresh_catalog\\(\\)/' tests/test_sql_tools.py)",
+      "Bash(pip list *)",
+      "Bash(python -I -c ' *)",
+      "Bash(rm -f _t.md)"
     ]
   }
 }
